@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                    <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="payment-failed-main">
+        <div class="failed-container">
+            
+            <!-- Ícone de Falha -->
+            <div class="failed-animation">
+                <div class="failed-x">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <!-- Título -->
+            <h1>Pagamento Não Concluído</h1>
+            <p class="failed-description"></p>
+            
+            <!-- Número do Pedido -->
+            <div class="order-number">
+                <span>Número do Pedido:</span>
+                <strong></strong>
+            </div>
+            
+            <!-- Motivo da Falha -->
+            <div class="failed-reason">
+                <h3>Possíveis Motivos</h3>
+                <ul>
+                    <li><i class="fas fa-times-circle"></i> </li>
+                    <li><i class="fas fa-times-circle"></i> </li>
+                    <li><i class="fas fa-times-circle"></i> </li>
+                    <li><i class="fas fa-times-circle"></i> </li>
+                </ul>
+            </div>
+            
+            <!-- Informações do Pedido -->
+            <div class="failed-order-info">
+                <div class="failed-info-header">
+                    <h3>Resumo da Compra</h3>
+                </div>
+                
+                <div class="failed-info-body">
+                    <div class="failed-event">
+                        <img src="../assets/evento1.jpg" alt="">
+                        <div>
+                            <h4></h4>
+                            <p><i class="far fa-calendar"></i> </p>
+                            <p><i class="fas fa-map-marker-alt"></i> </p>
+                        </div>
+                    </div>
+                    
+                    <div class="failed-tickets">
+                        <div class="failed-ticket-item">
+                            <span>Pista Premium x</span>
+                            <span>R$</span>
+                        </div>
+                        <div class="failed-ticket-item">
+                            <span>Meia Entrada x</span>
+                            <span>R$</span>
+                        </div>
+                    </div>
+                    
+                    <div class="failed-total">
+                        <span>Total</span>
+                        <strong>R$</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ações -->
+            <div class="failed-actions">
+                <button class="btn-retry-payment">
+                    <i class="fas fa-sync"></i> Tentar Novamente
+                </button>
+                
+                <button class="btn-choose-payment">
+                    <i class="fas fa-credit-card"></i> Escolher Outro Método
+                </button>
+                
+                <a href="../eventos.html" class="btn-cancel-order">
+                    <i class="fas fa-times"></i> Cancelar Pedido
+                </a>
+            </div>
+            
+            <!-- Aviso -->
+            <div class="failed-notice">
+                <i class="fas fa-info-circle"></i>
+                <p>Seu carrinho foi salvo. Os ingressos continuam reservados por <strong>15 minutos</strong>.</p>
+            </div>
+            
+            <!-- Métodos Alternativos -->
+            <div class="failed-alternatives">
+                <h3>Métodos de Pagamento Disponíveis</h3>
+                <div class="alternative-payment-methods">
+                    <div class="alt-method">
+                        <i class="fab fa-pix"></i>
+                        <span>Pix</span>
+                    </div>
+                    <div class="alt-method">
+                        <i class="far fa-credit-card"></i>
+                        <span>Cartão</span>
+                    </div>
+                    <div class="alt-method">
+                        <i class="fas fa-barcode"></i>
+                        <span>Boleto</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ajuda -->
+            <div class="failed-help">
+                <p>Precisa de ajuda? <a href="../contato.html">Fale Conosco</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
