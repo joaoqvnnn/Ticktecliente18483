@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Modal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Botões de Exemplo -->
+    <div class="modal-demo">
+        <button class="btn-open-modal" data-modal="modal-confirmacao">Abrir Modal de Confirmação</button>
+        <button class="btn-open-modal" data-modal="modal-alerta">Abrir Modal de Alerta</button>
+        <button class="btn-open-modal" data-modal="modal-sucesso">Abrir Modal de Sucesso</button>
+        <button class="btn-open-modal" data-modal="modal-erro">Abrir Modal de Erro</button>
+        <button class="btn-open-modal" data-modal="modal-login">Abrir Modal de Login</button>
+        <button class="btn-open-modal" data-modal="modal-termos">Abrir Modal de Termos</button>
+        <button class="btn-open-modal" data-modal="modal-imagem">Abrir Modal de Imagem</button>
+        <button class="btn-open-modal" data-modal="modal-video">Abrir Modal de Vídeo</button>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal" id="modal-confirmacao">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Confirmação</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-icon warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <p class="modal-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-cancel">Cancelar</button>
+                <button class="btn-modal-confirm">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Alerta -->
+    <div class="modal" id="modal-alerta">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-sm">
+            <div class="modal-header">
+                <h3>Atenção</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-icon info">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <p class="modal-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Sucesso -->
+    <div class="modal" id="modal-sucesso">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-sm">
+            <div class="modal-body text-center">
+                <div class="modal-icon success">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="modal-title"></h3>
+                <p class="modal-message"></p>
+            </div>
+            <div class="modal-footer center">
+                <button class="btn-modal-ok">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Erro -->
+    <div class="modal" id="modal-erro">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-sm">
+            <div class="modal-body text-center">
+                <div class="modal-icon error">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h3 class="modal-title"></h3>
+                <p class="modal-message"></p>
+            </div>
+            <div class="modal-footer center">
+                <button class="btn-modal-ok">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Login -->
+    <div class="modal" id="modal-login">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-md">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-login-form">
+                    <div class="form-group">
+                        <label for="modal-email">E-mail</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="modal-email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modal-senha">Senha</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="modal-senha" required>
+                            <button type="button" class="btn-toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="../autenticacao/recuperar-senha.html">Esqueceu a senha?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-modal-confirm full-width">Entrar</button>
+                    
+                    <div class="modal-divider">
+                        <span>ou</span>
+                    </div>
+                    
+                    <div class="modal-social">
+                        <button class="btn-social google"><i class="fab fa-google"></i> Google</button>
+                        <button class="btn-social facebook"><i class="fab fa-facebook"></i> Facebook</button>
+                    </div>
+                    
+                    <p class="modal-register-link">Não tem conta? <a href="../autenticacao/cadastro.html">Cadastre-se</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Termos -->
+    <div class="modal" id="modal-termos">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-lg">
+            <div class="modal-header">
+                <h3>Termos de Uso</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-scroll-content">
+                    <h4>1. </h4>
+                    <p></p>
+                    
+                    <h4>2. </h4>
+                    <p></p>
+                    
+                    <h4>3. </h4>
+                    <p></p>
+                    
+                    <h4>4. </h4>
+                    <p></p>
+                    
+                    <h4>5. </h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Li e aceito os termos
+                </label>
+                <button class="btn-modal-confirm">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Imagem -->
+    <div class="modal" id="modal-imagem">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-image">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-image-content">
+                <img src="../assets/evento1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Vídeo -->
+    <div class="modal" id="modal-video">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-video">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-video-content">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Vídeo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Compartilhamento -->
+    <div class="modal" id="modal-compartilhar">
+        <div class="modal-overlay"></div>
+        <div class="modal-container modal-sm">
+            <div class="modal-header">
+                <h3>Compartilhar</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="share-buttons-grid">
+                    <a href="#" class="share-option facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="share-option twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="share-option whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="#" class="share-option telegram">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="#" class="share-option email">
+                        <i class="fas fa-envelope"></i>
+                        <span>E-mail</span>
+                    </a>
+                    <a href="#" class="share-option copy">
+                        <i class="fas fa-link"></i>
+                        <span>Copiar Link</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
