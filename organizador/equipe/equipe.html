@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Minha Organização</a>
+                            <a href="equipe.html"><i class="fas fa-users"></i> Equipe</a>
+                            <a href="membros.html"><i class="fas fa-user-friends"></i> Membros</a>
+                            <a href="convites.html"><i class="fas fa-envelope"></i> Convites</a>
+                            <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../organizacao/organizacao.html">Organização</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Equipe</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="team-main">
+        <div class="team-container">
+            
+            <!-- Sidebar -->
+            <aside class="team-sidebar">
+                <div class="team-sidebar-header">
+                    <img src="../assets/organizacao-logo.jpg" alt="">
+                    <h3></h3>
+                </div>
+                
+                <nav class="team-sidebar-nav">
+                    <a href="equipe.html" class="active">
+                        <i class="fas fa-users"></i> Visão Geral
+                    </a>
+                    <a href="membros.html">
+                        <i class="fas fa-user-friends"></i> Membros
+                    </a>
+                    <a href="convites.html">
+                        <i class="fas fa-envelope"></i> Convites
+                    </a>
+                    <a href="permissoes.html">
+                        <i class="fas fa-lock"></i> Permissões
+                    </a>
+                    <a href="cargos.html">
+                        <i class="fas fa-briefcase"></i> Cargos
+                    </a>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="team-content">
+                
+                <!-- Cabeçalho -->
+                <div class="team-header">
+                    <h1>Equipe</h1>
+                    <button class="btn-add-member">
+                        <i class="fas fa-plus"></i> Adicionar Membro
+                    </button>
+                </div>
+                
+                <!-- Cards de Estatísticas -->
+                <div class="team-stats">
+                    <div class="team-stat-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <span class="team-stat-value"></span>
+                            <span class="team-stat-label">Total de Membros</span>
+                        </div>
+                    </div>
+                    
+                    <div class="team-stat-card">
+                        <i class="fas fa-user-shield"></i>
+                        <div>
+                            <span class="team-stat-value"></span>
+                            <span class="team-stat-label">Administradores</span>
+                        </div>
+                    </div>
+                    
+                    <div class="team-stat-card">
+                        <i class="fas fa-user-clock"></i>
+                        <div>
+                            <span class="team-stat-value"></span>
+                            <span class="team-stat-label">Pendentes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="team-stat-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="team-stat-value"></span>
+                            <span class="team-stat-label">Convites Enviados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Busca e Filtros -->
+                <div class="team-search">
+                    <div class="team-search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar membro...">
+                    </div>
+                    
+                    <select class="team-filter">
+                        <option value="">Todos os Cargos</option>
+                        <option value="admin">Administrador</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="eventos">Coordenador de Eventos</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                    
+                    <select class="team-filter">
+                        <option value="">Todos os Status</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="pendente">Pendente</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </div>
+                
+                <!-- Lista de Membros -->
+                <div class="team-members-list">
+                    
+                    <!-- Membro 1 -->
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <img src="../assets/membro1.jpg" alt="">
+                            <span class="member-status online"></span>
+                        </div>
+                        <div class="member-info">
+                            <h3></h3>
+                            <p><i class="fas fa-briefcase"></i> </p>
+                            <p><i class="fas fa-envelope"></i> </p>
+                        </div>
+                        <div class="member-role">
+                            <span class="role-badge admin">Administrador</span>
+                        </div>
+                        <div class="member-status-info">
+                            <span class="status-badge active">Ativo</span>
+                        </div>
+                        <div class="member-actions">
+                            <button class="btn-edit-member"><i class="fas fa-edit"></i></button>
+                            <button class="btn-delete-member"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Membro 2 -->
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <img src="../assets/membro2.jpg" alt="">
+                            <span class="member-status offline"></span>
+                        </div>
+                        <div class="member-info">
+                            <h3></h3>
+                            <p><i class="fas fa-briefcase"></i> </p>
+                            <p><i class="fas fa-envelope"></i> </p>
+                        </div>
+                        <div class="member-role">
+                            <span class="role-badge manager">Gerente</span>
+                        </div>
+                        <div class="member-status-info">
+                            <span class="status-badge active">Ativo</span>
+                        </div>
+                        <div class="member-actions">
+                            <button class="btn-edit-member"><i class="fas fa-edit"></i></button>
+                            <button class="btn-delete-member"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Membro 3 -->
+                    <div class="team-member-card">
+                        <div class="member-avatar">
+                            <img src="../assets/membro3.jpg" alt="">
+                            <span class="member-status online"></span>
+                        </div>
+                        <div class="member-info">
+                            <h3></h3>
+                            <p><i class="fas fa-briefcase"></i> </p>
+                            <p><i class="fas fa-envelope"></i> </p>
+                        </div>
+                        <div class="member-role">
+                            <span class="role-badge coordinator">Coordenador</span>
+                        </div>
+                        <div class="member-status-info">
+                            <span class="status-badge active">Ativo</span>
+                        </div>
+                        <div class="member-actions">
+                            <button class="btn-edit-member"><i class="fas fa-edit"></i></button>
+                            <button class="btn-delete-member"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Membro 4 - Pendente -->
+                    <div class="team-member-card pending">
+                        <div class="member-avatar">
+                            <img src="../assets/membro4.jpg" alt="">
+                            <span class="member-status pending"></span>
+                        </div>
+                        <div class="member-info">
+                            <h3></h3>
+                            <p><i class="fas fa-briefcase"></i> </p>
+                            <p><i class="fas fa-envelope"></i> </p>
+                        </div>
+                        <div class="member-role">
+                            <span class="role-badge finance">Financeiro</span>
+                        </div>
+                        <div class="member-status-info">
+                            <span class="status-badge pending">Pendente</span>
+                        </div>
+                        <div class="member-actions">
+                            <button class="btn-resend-invite"><i class="fas fa-envelope"></i></button>
+                            <button class="btn-cancel-invite"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Adicionar Membro -->
+                <div class="team-add-section">
+                    <h2>Adicionar Membro</h2>
+                    
+                    <form class="team-add-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="membro-nome">Nome Completo *</label>
+                                <input type="text" id="membro-nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="membro-email">E-mail *</label>
+                                <input type="email" id="membro-email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="membro-cargo">Cargo *</label>
+                                <select id="membro-cargo" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="admin">Administrador</option>
+                                    <option value="gerente">Gerente</option>
+                                    <option value="coordenador">Coordenador de Eventos</option>
+                                    <option value="financeiro">Financeiro</option>
+                                    <option value="marketing">Marketing</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="membro-telefone">Telefone</label>
+                                <input type="tel" id="membro-telefone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Permissões</label>
+                            <div class="permissions-grid">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Criar Eventos
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Gerenciar Ingressos
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Acessar Financeiro
+                                </label>
+                                <label class="checkbox-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Gerenciar Equipe
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-envelope"></i> Enviar Convite
+                        </button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
