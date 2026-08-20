@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="blog.html">Blog</a>
+            <i class="fas fa-chevron-right"></i>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Conteúdo do Post -->
+    <section class="post-details">
+        <div class="post-container">
+            
+            <!-- Cabeçalho do Post -->
+            <header class="post-header">
+                <div class="post-category-badge"></div>
+                <h1></h1>
+                <div class="post-meta">
+                    <span><i class="far fa-user"></i> </span>
+                    <span><i class="far fa-calendar"></i> </span>
+                    <span><i class="far fa-clock"></i> </span>
+                    <span><i class="far fa-comments"></i> comentários</span>
+                    <span><i class="far fa-eye"></i> visualizações</span>
+                </div>
+            </header>
+            
+            <!-- Imagem Principal -->
+            <div class="post-hero-image">
+                <img src="assets/post-principal.jpg" alt="">
+            </div>
+            
+            <!-- Corpo do Post -->
+            <div class="post-body">
+                <p></p>
+                <p></p>
+                
+                <h2></h2>
+                <p></p>
+                <p></p>
+                
+                <blockquote>
+                    <p></p>
+                </blockquote>
+                
+                <h2></h2>
+                <p></p>
+                <p></p>
+                
+                <h3></h3>
+                <p></p>
+                
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
+                <h2></h2>
+                <p></p>
+                <p></p>
+                
+                <img src="assets/post-imagem-meio.jpg" alt="">
+                
+                <p></p>
+                <p></p>
+            </div>
+            
+            <!-- Tags do Post -->
+            <div class="post-tags">
+                <span>Tags:</span>
+                <a href="#" class="tag"></a>
+                <a href="#" class="tag"></a>
+                <a href="#" class="tag"></a>
+                <a href="#" class="tag"></a>
+            </div>
+            
+            <!-- Compartilhar -->
+            <div class="post-share">
+                <span>Compartilhar:</span>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="share-btn pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <!-- Autor -->
+            <div class="post-author">
+                <div class="author-avatar">
+                    <img src="assets/autor.jpg" alt="">
+                </div>
+                <div class="author-info">
+                    <h3></h3>
+                    <p></p>
+                    <div class="author-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegação entre Posts -->
+            <div class="post-navigation">
+                <a href="#" class="prev-post">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <span>Post Anterior</span>
+                        <h4></h4>
+                    </div>
+                </a>
+                <a href="#" class="next-post">
+                    <div>
+                        <span>Próximo Post</span>
+                        <h4></h4>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Comentários -->
+            <div class="comments-section">
+                <h2>Comentários <span class="comments-count"></span></h2>
+                
+                <!-- Formulário de Comentário -->
+                <form class="comment-form">
+                    <h3>Deixe um comentário</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="comment-nome">Nome *</label>
+                            <input type="text" id="comment-nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-email">E-mail *</label>
+                            <input type="email" id="comment-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-mensagem">Comentário *</label>
+                        <textarea id="comment-mensagem" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Salvar meus dados para o próximo comentário
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit-comment">Publicar Comentário</button>
+                </form>
+                
+                <!-- Lista de Comentários -->
+                <div class="comments-list">
+                    <!-- Comentário 1 -->
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="assets/comentario1.jpg" alt="">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4></h4>
+                                <span><i class="far fa-calendar"></i> </span>
+                            </div>
+                            <p></p>
+                            <button class="btn-reply"><i class="fas fa-reply"></i> Responder</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Comentário 2 -->
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="assets/comentario2.jpg" alt="">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4></h4>
+                                <span><i class="far fa-calendar"></i> </span>
+                            </div>
+                            <p></p>
+                            <button class="btn-reply"><i class="fas fa-reply"></i> Responder</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Resposta ao Comentário 2 -->
+                    <div class="comment comment-reply">
+                        <div class="comment-avatar">
+                            <img src="assets/comentario3.jpg" alt="">
+                        </div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4></h4>
+                                <span><i class="far fa-calendar"></i> </span>
+                            </div>
+                            <p></p>
+                            <button class="btn-reply"><i class="fas fa-reply"></i> Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sidebar do Post -->
+        <aside class="blog-sidebar">
+            
+            <!-- Posts Populares -->
+            <div class="sidebar-widget">
+                <h3>Posts Populares</h3>
+                <div class="popular-posts">
+                    <div class="popular-post">
+                        <img src="assets/popular1.jpg" alt="">
+                        <div>
+                            <h4></h4>
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular-post">
+                        <img src="assets/popular2.jpg" alt="">
+                        <div>
+                            <h4></h4>
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                    </div>
+                    
+                    <div class="popular-post">
+                        <img src="assets/popular3.jpg" alt="">
+                        <div>
+                            <h4></h4>
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categorias -->
+            <div class="sidebar-widget">
+                <h3>Categorias</h3>
+                <ul class="sidebar-categories">
+                    <li><a href="#">Eventos <span></span></a></li>
+                    <li><a href="#">Dicas <span></span></a></li>
+                    <li><a href="#">Notícias <span></span></a></li>
+                    <li><a href="#">Cultura <span></span></a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="sidebar-widget newsletter-widget">
+                <h3>Newsletter</h3>
+                <p></p>
+                <form class="sidebar-newsletter">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Posts Relacionados -->
+    <section class="related-posts">
+        <div class="blog-container">
+            <div class="section-header">
+                <h2>Posts Relacionados</h2>
+            </div>
+            
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="assets/relacionado1.jpg" alt="">
+                        <span class="post-category"></span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                        <h3></h3>
+                        <a href="blog-post.html" class="btn-read-more">Ler Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="assets/relacionado2.jpg" alt="">
+                        <span class="post-category"></span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                        <h3></h3>
+                        <a href="blog-post.html" class="btn-read-more">Ler Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="assets/relacionado3.jpg" alt="">
+                        <span class="post-category"></span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                        </div>
+                        <h3></h3>
+                        <a href="blog-post.html" class="btn-read-more">Ler Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
