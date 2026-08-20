@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                    <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../eventos.html">Eventos</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../evento.html">Detalhes do Evento</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Checkout</span>
+        </div>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <section class="checkout-progress">
+        <div class="checkout-container">
+            <div class="progress-steps">
+                <div class="progress-step completed">
+                    <div class="step-circle"><i class="fas fa-check"></i></div>
+                    <span>Ingressos</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step completed">
+                    <div class="step-circle"><i class="fas fa-check"></i></div>
+                    <span>Dados</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step active">
+                    <div class="step-circle">3</div>
+                    <span>Pagamento</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-circle">4</div>
+                    <span>Confirmação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section class="checkout-main">
+        <div class="checkout-container">
+            <div class="checkout-layout">
+                
+                <!-- Coluna Principal - Métodos de Pagamento -->
+                <div class="checkout-content">
+                    
+                    <!-- Escolha do Método de Pagamento -->
+                    <div class="payment-methods-section">
+                        <h2>Método de Pagamento</h2>
+                        
+                        <!-- Métodos de Pagamento -->
+                        <div class="payment-methods-list">
+                            
+                            <!-- Cartão de Crédito -->
+                            <div class="payment-method-card active">
+                                <div class="payment-method-header">
+                                    <label class="radio-container">
+                                        <input type="radio" name="payment-method" value="cartao" checked>
+                                        <span class="radiomark"></span>
+                                    </label>
+                                    <div class="payment-method-icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h3>Cartão de Crédito</h3>
+                                        <p></p>
+                                    </div>
+                                    <div class="payment-method-badges">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                        <i class="fab fa-cc-elo"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Formulário do Cartão -->
+                                <div class="payment-method-content" id="cartao-content">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="cartao-numero">Número do Cartão *</label>
+                                            <div class="input-with-icon">
+                                                <i class="far fa-credit-card"></i>
+                                                <input type="text" id="cartao-numero" placeholder="0000 0000 0000 0000">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="cartao-nome">Nome no Cartão *</label>
+                                            <input type="text" id="cartao-nome">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="cartao-validade">Validade *</label>
+                                            <input type="text" id="cartao-validade" placeholder="MM/AA">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="cartao-cvv">CVV *</label>
+                                            <div class="input-with-icon">
+                                                <i class="fas fa-lock"></i>
+                                                <input type="text" id="cartao-cvv" placeholder="000">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="cartao-parcelas">Parcelas</label>
+                                            <select id="cartao-parcelas">
+                                                <option value="">Selecione...</option>
+                                                <option value="1">1x sem juros</option>
+                                                <option value="2">2x sem juros</option>
+                                                <option value="3">3x sem juros</option>
+                                                <option value="4">4x com juros</option>
+                                                <option value="5">5x com juros</option>
+                                                <option value="6">6x com juros</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pix -->
+                            <div class="payment-method-card">
+                                <div class="payment-method-header">
+                                    <label class="radio-container">
+                                        <input type="radio" name="payment-method" value="pix">
+                                        <span class="radiomark"></span>
+                                    </label>
+                                    <div class="payment-method-icon pix">
+                                        <i class="fab fa-pix"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h3>Pix</h3>
+                                        <p></p>
+                                    </div>
+                                    <span class="payment-discount">-5%</span>
+                                </div>
+                                
+                                <div class="payment-method-content" id="pix-content" style="display: none;">
+                                    <p class="pix-info"><i class="fas fa-bolt"></i> </p>
+                                    <p class="pix-info"><i class="fas fa-clock"></i> </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Boleto -->
+                            <div class="payment-method-card">
+                                <div class="payment-method-header">
+                                    <label class="radio-container">
+                                        <input type="radio" name="payment-method" value="boleto">
+                                        <span class="radiomark"></span>
+                                    </label>
+                                    <div class="payment-method-icon">
+                                        <i class="fas fa-barcode"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h3>Boleto Bancário</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="payment-method-content" id="boleto-content" style="display: none;">
+                                    <p class="boleto-info"><i class="fas fa-clock"></i> </p>
+                                    <p class="boleto-info"><i class="fas fa-exclamation-triangle"></i> </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Carteiras Digitais -->
+                            <div class="payment-method-card">
+                                <div class="payment-method-header">
+                                    <label class="radio-container">
+                                        <input type="radio" name="payment-method" value="carteira">
+                                        <span class="radiomark"></span>
+                                    </label>
+                                    <div class="payment-method-icon">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <div class="payment-method-info">
+                                        <h3>Carteiras Digitais</h3>
+                                        <p></p>
+                                    </div>
+                                    <div class="payment-method-badges">
+                                        <i class="fab fa-google-pay"></i>
+                                        <i class="fab fa-apple-pay"></i>
+                                        <i class="fab fa-paypal"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="payment-method-content" id="carteira-content" style="display: none;">
+                                    <div class="digital-wallets">
+                                        <button class="btn-wallet google-pay">
+                                            <i class="fab fa-google-pay"></i> Google Pay
+                                        </button>
+                                        <button class="btn-wallet apple-pay">
+                                            <i class="fab fa-apple-pay"></i> Apple Pay
+                                        </button>
+                                        <button class="btn-wallet paypal">
+                                            <i class="fab fa-paypal"></i> PayPal
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cupom de Desconto -->
+                    <div class="coupon-section">
+                        <h2>Cupom de Desconto</h2>
+                        <div class="coupon-form">
+                            <input type="text" placeholder="Digite seu cupom">
+                            <button class="btn-apply-coupon">Aplicar</button>
+                        </div>
+                        <p class="coupon-message"></p>
+                    </div>
+                    
+                    <!-- Botões de Ação -->
+                    <div class="selection-actions">
+                        <a href="dados-comprador.html" class="btn-back">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                        <a href="confirmacao.html" class="btn-confirm-payment">
+                            Finalizar Pagamento <i class="fas fa-check-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar - Resumo do Pedido -->
+                <aside class="checkout-sidebar">
+                    <div class="order-summary">
+                        <h3>Resumo do Pedido</h3>
+                        
+                        <div class="event-summary-mini">
+                            <img src="../assets/evento1.jpg" alt="">
+                            <div>
+                                <h4></h4>
+                                <p><i class="far fa-calendar"></i> </p>
+                                <p><i class="fas fa-map-marker-alt"></i> </p>
+                            </div>
+                        </div>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <span>Pista Premium x</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="order-item">
+                                <span>Meia Entrada x</span>
+                                <span>R$</span>
+                            </div>
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Taxa de Serviço</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="total-row discount">
+                                <span>Desconto</span>
+                                <span>-R$</span>
+                            </div>
+                            <div class="total-row total-grand">
+                                <span>Total</span>
+                                <span>R$</span>
+                            </div>
+                        </div>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Pagamento 100% seguro</span>
+                        </div>
+                        
+                        <div class="ssl-certificate">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>SSL Certificado</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
