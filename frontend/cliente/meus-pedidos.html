@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/user-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="painel.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="meus-ingressos.html"><i class="fas fa-ticket-alt"></i> Meus Ingressos</a>
+                            <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="../autenticacao/login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="dashboard-main">
+        <div class="dashboard-container">
+            
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="user-profile-summary">
+                    <div class="user-avatar-large">
+                        <img src="../assets/user-avatar.jpg" alt="">
+                    </div>
+                    <h3></h3>
+                    <span class="user-level"></span>
+                </div>
+                
+                <nav class="dashboard-nav">
+                    <a href="painel.html">
+                        <i class="fas fa-home"></i> Visão Geral
+                    </a>
+                    <a href="meus-ingressos.html">
+                        <i class="fas fa-ticket-alt"></i> Meus Ingressos
+                    </a>
+                    <a href="meus-pedidos.html" class="active">
+                        <i class="fas fa-shopping-bag"></i> Meus Pedidos
+                    </a>
+                    <a href="favoritos.html">
+                        <i class="fas fa-heart"></i> Favoritos
+                    </a>
+                    <a href="carteira.html">
+                        <i class="fas fa-wallet"></i> Carteira
+                    </a>
+                    <a href="cupons.html">
+                        <i class="fas fa-tags"></i> Cupons
+                    </a>
+                    <a href="notificacoes.html">
+                        <i class="fas fa-bell"></i> Notificações
+                    </a>
+                    <a href="perfil.html">
+                        <i class="fas fa-user"></i> Perfil
+                    </a>
+                    <a href="seguranca.html">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </a>
+                    <a href="configuracoes.html">
+                        <i class="fas fa-cog"></i> Configurações
+                    </a>
+                </nav>
+                
+                <div class="dashboard-sidebar-footer">
+                    <a href="../autenticacao/login.html" class="btn-logout">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </a>
+                </div>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="dashboard-content">
+                
+                <!-- Cabeçalho -->
+                <div class="orders-header">
+                    <h1>Meus Pedidos</h1>
+                    <div class="orders-search">
+                        <input type="text" placeholder="Buscar pedido...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="orders-filters">
+                    <button class="order-filter active">Todos</button>
+                    <button class="order-filter">Em Andamento</button>
+                    <button class="order-filter">Concluídos</button>
+                    <button class="order-filter">Cancelados</button>
+                </div>
+                
+                <!-- Lista de Pedidos -->
+                <div class="orders-list">
+                    
+                    <!-- Pedido 1 -->
+                    <div class="order-card">
+                        <div class="order-card-header">
+                            <div class="order-id">
+                                <span>Pedido #</span>
+                                <strong></strong>
+                            </div>
+                            <div class="order-date">
+                                <i class="far fa-calendar"></i>
+                                <span></span>
+                            </div>
+                            <div class="order-status">
+                                <span class="status-badge completed">Concluído</span>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-body">
+                            <div class="order-event">
+                                <img src="../assets/evento1.jpg" alt="">
+                                <div>
+                                    <h3></h3>
+                                    <p><i class="far fa-calendar"></i> </p>
+                                    <p><i class="fas fa-map-marker-alt"></i> </p>
+                                </div>
+                            </div>
+                            
+                            <div class="order-summary-info">
+                                <div class="order-info-item">
+                                    <span>Ingressos</span>
+                                    <strong></strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Valor Total</span>
+                                    <strong>R$</strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Método</span>
+                                    <strong></strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-footer">
+                            <a href="pedido.html" class="btn-view-order">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </a>
+                            <button class="btn-download-order">
+                                <i class="fas fa-download"></i> Baixar Recibo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pedido 2 -->
+                    <div class="order-card">
+                        <div class="order-card-header">
+                            <div class="order-id">
+                                <span>Pedido #</span>
+                                <strong></strong>
+                            </div>
+                            <div class="order-date">
+                                <i class="far fa-calendar"></i>
+                                <span></span>
+                            </div>
+                            <div class="order-status">
+                                <span class="status-badge pending">Em Andamento</span>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-body">
+                            <div class="order-event">
+                                <img src="../assets/evento2.jpg" alt="">
+                                <div>
+                                    <h3></h3>
+                                    <p><i class="far fa-calendar"></i> </p>
+                                    <p><i class="fas fa-map-marker-alt"></i> </p>
+                                </div>
+                            </div>
+                            
+                            <div class="order-summary-info">
+                                <div class="order-info-item">
+                                    <span>Ingressos</span>
+                                    <strong></strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Valor Total</span>
+                                    <strong>R$</strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Método</span>
+                                    <strong></strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-footer">
+                            <a href="pedido.html" class="btn-view-order">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </a>
+                            <button class="btn-download-order">
+                                <i class="fas fa-download"></i> Baixar Recibo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pedido 3 -->
+                    <div class="order-card">
+                        <div class="order-card-header">
+                            <div class="order-id">
+                                <span>Pedido #</span>
+                                <strong></strong>
+                            </div>
+                            <div class="order-date">
+                                <i class="far fa-calendar"></i>
+                                <span></span>
+                            </div>
+                            <div class="order-status">
+                                <span class="status-badge cancelled">Cancelado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-body">
+                            <div class="order-event">
+                                <img src="../assets/evento3.jpg" alt="">
+                                <div>
+                                    <h3></h3>
+                                    <p><i class="far fa-calendar"></i> </p>
+                                    <p><i class="fas fa-map-marker-alt"></i> </p>
+                                </div>
+                            </div>
+                            
+                            <div class="order-summary-info">
+                                <div class="order-info-item">
+                                    <span>Ingressos</span>
+                                    <strong></strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Valor Total</span>
+                                    <strong>R$</strong>
+                                </div>
+                                <div class="order-info-item">
+                                    <span>Método</span>
+                                    <strong></strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-card-footer">
+                            <a href="pedido.html" class="btn-view-order">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
