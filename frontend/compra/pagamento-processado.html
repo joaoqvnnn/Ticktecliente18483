@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="processing-body">
+    
+    <!-- Conteúdo Principal -->
+    <section class="processing-main">
+        <div class="processing-container">
+            
+            <!-- Animação de Processamento -->
+            <div class="processing-animation">
+                <div class="processing-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="processing-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+            </div>
+            
+            <!-- Título -->
+            <h1>Processando Pagamento</h1>
+            <p class="processing-description"></p>
+            
+            <!-- Barra de Progresso -->
+            <div class="processing-bar">
+                <div class="processing-bar-fill"></div>
+            </div>
+            
+            <!-- Etapas do Processamento -->
+            <div class="processing-steps">
+                <div class="processing-step active">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Validando dados</span>
+                </div>
+                
+                <div class="processing-step active">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Conectando ao banco</span>
+                </div>
+                
+                <div class="processing-step">
+                    <div class="processing-step-spinner"></div>
+                    <span>Confirmando pagamento</span>
+                </div>
+                
+                <div class="processing-step">
+                    <i class="fas fa-circle"></i>
+                    <span>Gerando ingressos</span>
+                </div>
+            </div>
+            
+            <!-- Informações do Pedido -->
+            <div class="processing-order-info">
+                <div class="processing-order-header">
+                    <h3>Detalhes do Pedido</h3>
+                </div>
+                
+                <div class="processing-order-body">
+                    <div class="processing-info-row">
+                        <span>Pedido:</span>
+                        <strong></strong>
+                    </div>
+                    <div class="processing-info-row">
+                        <span>Valor:</span>
+                        <strong>R$</strong>
+                    </div>
+                    <div class="processing-info-row">
+                        <span>Método:</span>
+                        <strong></strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Aviso -->
+            <div class="processing-notice">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Não feche esta janela durante o processamento</p>
+            </div>
+            
+            <!-- Tempo Estimado -->
+            <div class="processing-time">
+                <i class="fas fa-clock"></i>
+                <span>Tempo estimado: <strong>30 segundos</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simplificado -->
+    <footer class="auth-footer">
+        <div class="auth-footer-container">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <div class="auth-footer-links">
+                <a href="../termos.html">Termos</a>
+                <a href="../privacidade.html">Privacidade</a>
+                <a href="../contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
