@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header do Painel -->
+    <header class="admin-header">
+        <div class="admin-header-container">
+            <div class="admin-logo">
+                <a href="index.html"></a>
+            </div>
+            
+            <div class="admin-header-actions">
+                <button class="admin-search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+                <button class="admin-notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">5</span>
+                </button>
+                
+                <div class="admin-user-menu">
+                    <button class="admin-user-avatar">
+                        <img src="../assets/admin-avatar.jpg" alt="">
+                        <span>Administrador</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="admin-user-dropdown">
+                        <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                        <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="../index.html"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                        <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo do Painel -->
+    <section class="admin-main">
+        <div class="admin-container">
+            
+            <!-- Sidebar do Painel -->
+            <aside class="admin-sidebar">
+                <nav class="admin-nav">
+                    <div class="admin-nav-section">
+                        <h3>Principal</h3>
+                        <a href="index.html" class="active">
+                            <i class="fas fa-dashboard"></i> Dashboard
+                        </a>
+                        <a href="eventos.html">
+                            <i class="fas fa-calendar"></i> Eventos
+                        </a>
+                        <a href="ingressos.html">
+                            <i class="fas fa-ticket-alt"></i> Ingressos
+                        </a>
+                        <a href="pedidos.html">
+                            <i class="fas fa-shopping-bag"></i> Pedidos
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Gestão</h3>
+                        <a href="usuarios.html">
+                            <i class="fas fa-users"></i> Usuários
+                        </a>
+                        <a href="organizadores.html">
+                            <i class="fas fa-building"></i> Organizadores
+                        </a>
+                        <a href="promotores.html">
+                            <i class="fas fa-bullhorn"></i> Promotores
+                        </a>
+                        <a href="categorias.html">
+                            <i class="fas fa-tags"></i> Categorias
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Financeiro</h3>
+                        <a href="vendas.html">
+                            <i class="fas fa-chart-line"></i> Vendas
+                        </a>
+                        <a href="pagamentos.html">
+                            <i class="fas fa-credit-card"></i> Pagamentos
+                        </a>
+                        <a href="reembolsos.html">
+                            <i class="fas fa-undo"></i> Reembolsos
+                        </a>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i> Relatórios
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Conteúdo</h3>
+                        <a href="blog.html">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                        <a href="faq.html">
+                            <i class="fas fa-question-circle"></i> FAQ
+                        </a>
+                        <a href="banners.html">
+                            <i class="fas fa-images"></i> Banners
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Sistema</h3>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i> Configurações
+                        </a>
+                        <a href="logs.html">
+                            <i class="fas fa-history"></i> Logs
+                        </a>
+                        <a href="backup.html">
+                            <i class="fas fa-database"></i> Backup
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="admin-content">
+                
+                <!-- Cabeçalho -->
+                <div class="admin-dashboard-header">
+                    <h1>Dashboard</h1>
+                    <p></p>
+                </div>
+                
+                <!-- Cards de Estatísticas -->
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="admin-stat-info">
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Ingressos Vendidos</span>
+                            <span class="admin-stat-change positive">
+                                <i class="fas fa-arrow-up"></i> %
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="admin-stat-info">
+                            <span class="admin-stat-value">R$</span>
+                            <span class="admin-stat-label">Receita Total</span>
+                            <span class="admin-stat-change positive">
+                                <i class="fas fa-arrow-up"></i> %
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="admin-stat-info">
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Usuários Ativos</span>
+                            <span class="admin-stat-change positive">
+                                <i class="fas fa-arrow-up"></i> %
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <div class="admin-stat-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="admin-stat-info">
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Eventos Ativos</span>
+                            <span class="admin-stat-change positive">
+                                <i class="fas fa-arrow-up"></i> %
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gráficos -->
+                <div class="admin-charts-grid">
+                    <div class="admin-chart-card">
+                        <div class="admin-chart-header">
+                            <h3>Vendas nos Últimos 30 Dias</h3>
+                        </div>
+                        <div class="admin-chart-body">
+                            <div class="chart-placeholder">
+                                <i class="fas fa-chart-bar"></i>
+                                <p>Gráfico de Vendas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-chart-card">
+                        <div class="admin-chart-header">
+                            <h3>Ingressos por Categoria</h3>
+                        </div>
+                        <div class="admin-chart-body">
+                            <div class="chart-placeholder">
+                                <i class="fas fa-chart-pie"></i>
+                                <p>Gráfico de Categorias</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Eventos Recentes -->
+                <div class="admin-section">
+                    <div class="admin-section-header">
+                        <h2>Eventos Recentes</h2>
+                        <a href="eventos.html" class="admin-view-all">Ver Todos</a>
+                    </div>
+                    
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Data</th>
+                                    <th>Local</th>
+                                    <th>Ingressos</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="admin-status active">Ativo</span></td>
+                                    <td>
+                                        <button class="admin-btn-edit"><i class="fas fa-edit"></i></button>
+                                        <button class="admin-btn-delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="admin-status pending">Pendente</span></td>
+                                    <td>
+                                        <button class="admin-btn-edit"><i class="fas fa-edit"></i></button>
+                                        <button class="admin-btn-delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="admin-status closed">Encerrado</span></td>
+                                    <td>
+                                        <button class="admin-btn-edit"><i class="fas fa-edit"></i></button>
+                                        <button class="admin-btn-delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Últimos Pedidos -->
+                <div class="admin-section">
+                    <div class="admin-section-header">
+                        <h2>Últimos Pedidos</h2>
+                        <a href="pedidos.html" class="admin-view-all">Ver Todos</a>
+                    </div>
+                    
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Pedido</th>
+                                    <th>Cliente</th>
+                                    <th>Evento</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>R$</td>
+                                    <td><span class="admin-status completed">Concluído</span></td>
+                                    <td>
+                                        <button class="admin-btn-view"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>R$</td>
+                                    <td><span class="admin-status processing">Processando</span></td>
+                                    <td>
+                                        <button class="admin-btn-view"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>R$</td>
+                                    <td><span class="admin-status refunded">Reembolsado</span></td>
+                                    <td>
+                                        <button class="admin-btn-view"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
