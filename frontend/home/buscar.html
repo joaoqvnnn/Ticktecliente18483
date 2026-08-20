@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Área de Busca Principal -->
+    <section class="search-hero">
+        <div class="search-hero-content">
+            <h1>Buscar Eventos</h1>
+            <p></p>
+            
+            <form class="main-search-form">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="" class="main-search-input">
+                </div>
+                <button type="submit" class="btn-main-search">Buscar</button>
+            </form>
+            
+            <div class="search-suggestions">
+                <span>Populares:</span>
+                <a href="#" class="suggestion-tag"></a>
+                <a href="#" class="suggestion-tag"></a>
+                <a href="#" class="suggestion-tag"></a>
+                <a href="#" class="suggestion-tag"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados da Busca -->
+    <section class="search-results">
+        <div class="results-container">
+            
+            <!-- Sidebar de Filtros -->
+            <aside class="filters-sidebar">
+                <div class="sidebar-header">
+                    <h3>Filtros</h3>
+                    <button class="btn-clear-filters">Limpar</button>
+                </div>
+                
+                <!-- Filtro por Categoria -->
+                <div class="filter-block">
+                    <h4>Categoria</h4>
+                    <div class="filter-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Shows
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Teatro
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Esportes
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Festivais
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Conferências
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Filtro por Preço -->
+                <div class="filter-block">
+                    <h4>Faixa de Preço</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="500" class="price-slider">
+                        <div class="price-values">
+                            <span>R$ 0</span>
+                            <span>R$ 1000</span>
+                        </div>
+                    </div>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Min" class="price-input">
+                        <span>até</span>
+                        <input type="number" placeholder="Max" class="price-input">
+                    </div>
+                </div>
+                
+                <!-- Filtro por Data -->
+                <div class="filter-block">
+                    <h4>Data</h4>
+                    <div class="filter-options">
+                        <label class="radio-container">
+                            <input type="radio" name="date-filter">
+                            <span class="radiomark"></span>
+                            Hoje
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="date-filter">
+                            <span class="radiomark"></span>
+                            Esta Semana
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="date-filter">
+                            <span class="radiomark"></span>
+                            Este Mês
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="date-filter">
+                            <span class="radiomark"></span>
+                            Próximos 3 Meses
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Filtro por Localização -->
+                <div class="filter-block">
+                    <h4>Localização</h4>
+                    <div class="filter-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            São Paulo
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Rio de Janeiro
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Belo Horizonte
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Online
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn-apply-filters">Aplicar Filtros</button>
+            </aside>
+            
+            <!-- Área de Resultados -->
+            <div class="results-content">
+                <div class="results-header">
+                    <h2>Resultados</h2>
+                    <span class="results-count"> eventos encontrados</span>
+                    
+                    <div class="results-sort">
+                        <select class="sort-select">
+                            <option value="relevancia">Mais Relevantes</option>
+                            <option value="recentes">Mais Recentes</option>
+                            <option value="preco-menor">Menor Preço</option>
+                            <option value="preco-maior">Maior Preço</option>
+                            <option value="avaliacao">Melhor Avaliados</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Resultado 1 -->
+                <div class="search-result-card">
+                    <div class="result-image">
+                        <img src="assets/resultado1.jpg" alt="">
+                        <span class="result-category">Show</span>
+                    </div>
+                    <div class="result-info">
+                        <h3></h3>
+                        <div class="result-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                            <span><i class="fas fa-map-marker-alt"></i> </span>
+                            <span><i class="fas fa-building"></i> </span>
+                        </div>
+                        <p class="result-description"></p>
+                        <div class="result-footer">
+                            <div class="result-price">
+                                <span>A partir de</span>
+                                <strong></strong>
+                            </div>
+                            <a href="detalhes-evento.html" class="btn-view-event">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultado 2 -->
+                <div class="search-result-card">
+                    <div class="result-image">
+                        <img src="assets/resultado2.jpg" alt="">
+                        <span class="result-category">Teatro</span>
+                    </div>
+                    <div class="result-info">
+                        <h3></h3>
+                        <div class="result-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                            <span><i class="fas fa-map-marker-alt"></i> </span>
+                            <span><i class="fas fa-building"></i> </span>
+                        </div>
+                        <p class="result-description"></p>
+                        <div class="result-footer">
+                            <div class="result-price">
+                                <span>A partir de</span>
+                                <strong></strong>
+                            </div>
+                            <a href="detalhes-evento.html" class="btn-view-event">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultado 3 -->
+                <div class="search-result-card">
+                    <div class="result-image">
+                        <img src="assets/resultado3.jpg" alt="">
+                        <span class="result-category">Festival</span>
+                    </div>
+                    <div class="result-info">
+                        <h3></h3>
+                        <div class="result-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                            <span><i class="fas fa-map-marker-alt"></i> </span>
+                            <span><i class="fas fa-building"></i> </span>
+                        </div>
+                        <p class="result-description"></p>
+                        <div class="result-footer">
+                            <div class="result-price">
+                                <span>A partir de</span>
+                                <strong></strong>
+                            </div>
+                            <a href="detalhes-evento.html" class="btn-view-event">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resultado 4 -->
+                <div class="search-result-card">
+                    <div class="result-image">
+                        <img src="assets/resultado4.jpg" alt="">
+                        <span class="result-category">Esporte</span>
+                    </div>
+                    <div class="result-info">
+                        <h3></h3>
+                        <div class="result-meta">
+                            <span><i class="far fa-calendar"></i> </span>
+                            <span><i class="fas fa-map-marker-alt"></i> </span>
+                            <span><i class="fas fa-building"></i> </span>
+                        </div>
+                        <p class="result-description"></p>
+                        <div class="result-footer">
+                            <div class="result-price">
+                                <span>A partir de</span>
+                                <strong></strong>
+                            </div>
+                            <a href="detalhes-evento.html" class="btn-view-event">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paginação -->
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buscas Recentes -->
+    <section class="recent-searches">
+        <div class="recent-searches-content">
+            <h2>Buscas Recentes</h2>
+            <div class="recent-tags">
+                <a href="#" class="recent-tag">
+                    <i class="fas fa-clock"></i>
+                    <span></span>
+                    <i class="fas fa-times remove-search"></i>
+                </a>
+                <a href="#" class="recent-tag">
+                    <i class="fas fa-clock"></i>
+                    <span></span>
+                    <i class="fas fa-times remove-search"></i>
+                </a>
+                <a href="#" class="recent-tag">
+                    <i class="fas fa-clock"></i>
+                    <span></span>
+                    <i class="fas fa-times remove-search"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
