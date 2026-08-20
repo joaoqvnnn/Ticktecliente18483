@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                    <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../eventos.html">Eventos</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../evento.html">Detalhes do Evento</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Pagamento</span>
+        </div>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <section class="checkout-progress">
+        <div class="checkout-container">
+            <div class="progress-steps">
+                <div class="progress-step completed">
+                    <div class="step-circle"><i class="fas fa-check"></i></div>
+                    <span>Ingressos</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step completed">
+                    <div class="step-circle"><i class="fas fa-check"></i></div>
+                    <span>Dados</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step active">
+                    <div class="step-circle">3</div>
+                    <span>Pagamento</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-circle">4</div>
+                    <span>Confirmação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal - Pix -->
+    <section class="payment-main">
+        <div class="payment-container">
+            
+            <!-- Título -->
+            <div class="payment-header">
+                <div class="payment-icon">
+                    <i class="fab fa-pix"></i>
+                </div>
+                <h1>Pagamento via Pix</h1>
+                <p></p>
+            </div>
+            
+            <!-- QR Code -->
+            <div class="payment-qrcode-section">
+                <div class="qrcode-wrapper">
+                    <div class="qrcode-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                        <p>QR Code</p>
+                    </div>
+                    <p class="qrcode-hint"></p>
+                </div>
+                
+                <!-- Código Pix Copia e Cola -->
+                <div class="pix-copy-paste">
+                    <label>Pix Copia e Cola</label>
+                    <div class="pix-code-box">
+                        <input type="text" value="" readonly>
+                        <button class="btn-copy-pix">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                    <p class="copy-message"></p>
+                </div>
+            </div>
+            
+            <!-- Timer de Expiração -->
+            <div class="payment-timer">
+                <i class="fas fa-clock"></i>
+                <span>O QR Code expira em <strong id="pix-timer">30:00</strong></span>
+                <div class="timer-progress">
+                    <div class="timer-progress-bar"></div>
+                </div>
+            </div>
+            
+            <!-- Instruções -->
+            <div class="payment-instructions">
+                <h3>Como Pagar com Pix</h3>
+                
+                <div class="instruction-steps">
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Abra seu aplicativo</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Escaneie o QR Code</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Confirme o pagamento</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Pagamento confirmado</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Status do Pagamento -->
+            <div class="payment-status">
+                <div class="status-indicator">
+                    <div class="status-spinner"></div>
+                    <span>Aguardando pagamento...</span>
+                </div>
+                <button class="btn-check-payment" id="btn-check-payment">
+                    <i class="fas fa-sync"></i> Já fiz o pagamento
+                </button>
+            </div>
+            
+            <!-- Resumo do Pedido -->
+            <div class="payment-summary">
+                <div class="payment-summary-header">
+                    <h3>Resumo do Pedido</h3>
+                </div>
+                
+                <div class="payment-summary-body">
+                    <div class="summary-item">
+                        <span>Pista Premium x</span>
+                        <span>R$</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Meia Entrada x</span>
+                        <span>R$</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Taxa de Serviço</span>
+                        <span>R$</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>R$</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ações -->
+            <div class="payment-actions">
+                <a href="checkout.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </a>
+                <a href="confirmacao.html" class="btn-continue">
+                    Continuar <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
