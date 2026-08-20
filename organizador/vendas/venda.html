@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="vendas.html"><i class="fas fa-chart-line"></i> Vendas</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="vendas.html">Vendas</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Detalhes da Venda</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="sale-detail-main">
+        <div class="sale-detail-container">
+            
+            <!-- Cabeçalho -->
+            <div class="sale-detail-header">
+                <a href="vendas.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </a>
+                <div class="sale-detail-title">
+                    <h1>Venda #<span></span></h1>
+                    <span class="sales-status approved">Aprovada</span>
+                </div>
+            </div>
+            
+            <!-- Informações da Venda -->
+            <div class="sale-detail-info">
+                <div class="sale-info-card">
+                    <h3>Informações da Venda</h3>
+                    <div class="info-list">
+                        <div class="info-row">
+                            <span>Data da Venda:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Método de Pagamento:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Status:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Valor Total:</span>
+                            <strong>R$</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sale-info-card">
+                    <h3>Dados do Comprador</h3>
+                    <div class="info-list">
+                        <div class="info-row">
+                            <span>Nome:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>CPF:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>E-mail:</span>
+                            <strong></strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Telefone:</span>
+                            <strong></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Evento da Venda -->
+            <div class="sale-detail-event">
+                <h3>Evento</h3>
+                <div class="sale-event-card">
+                    <img src="../../assets/evento1.jpg" alt="">
+                    <div class="sale-event-info">
+                        <h4></h4>
+                        <p><i class="far fa-calendar"></i> </p>
+                        <p><i class="fas fa-map-marker-alt"></i> </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ingressos da Venda -->
+            <div class="sale-detail-tickets">
+                <h3>Ingressos</h3>
+                
+                <table class="sale-tickets-table">
+                    <thead>
+                        <tr>
+                            <th>Ingresso</th>
+                            <th>Setor</th>
+                            <th>Tipo</th>
+                            <th>Participante</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Pista Premium</td>
+                            <td>Inteira</td>
+                            <td></td>
+                            <td>R$</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Pista Premium</td>
+                            <td>Meia Entrada</td>
+                            <td></td>
+                            <td>R$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Resumo Financeiro -->
+            <div class="sale-detail-financial">
+                <h3>Resumo Financeiro</h3>
+                <div class="financial-list">
+                    <div class="financial-row">
+                        <span>Subtotal</span>
+                        <strong>R$</strong>
+                    </div>
+                    <div class="financial-row">
+                        <span>Taxa de Serviço</span>
+                        <strong>R$</strong>
+                    </div>
+                    <div class="financial-row">
+                        <span>Desconto</span>
+                        <strong>-R$</strong>
+                    </div>
+                    <div class="financial-row total">
+                        <span>Total</span>
+                        <strong>R$</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagamento -->
+            <div class="sale-detail-payment">
+                <h3>Pagamento</h3>
+                
+                <div class="payment-info-card">
+                    <div class="payment-method-icon">
+                        <i class="fab fa-pix"></i>
+                    </div>
+                    <div class="payment-details">
+                        <h4>Pix</h4>
+                        <p>Transação: </p>
+                        <p>Data: </p>
+                    </div>
+                    <span class="payment-status approved">Aprovado</span>
+                </div>
+            </div>
+            
+            <!-- Ações -->
+            <div class="sale-detail-actions">
+                <button class="btn-download-receipt">
+                    <i class="fas fa-download"></i> Baixar Recibo
+                </button>
+                
+                <button class="btn-print-receipt">
+                    <i class="fas fa-print"></i> Imprimir
+                </button>
+                
+                <button class="btn-send-email">
+                    <i class="fas fa-envelope"></i> Enviar por E-mail
+                </button>
+                
+                <button class="btn-cancel-sale">
+                    <i class="fas fa-times"></i> Cancelar Venda
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
