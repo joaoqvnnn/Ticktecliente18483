@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Minha Organização</a>
+                            <a href="equipe.html"><i class="fas fa-users"></i> Equipe</a>
+                            <a href="membros.html"><i class="fas fa-user-friends"></i> Membros</a>
+                            <a href="convites.html"><i class="fas fa-envelope"></i> Convites</a>
+                            <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../organizacao/organizacao.html">Organização</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="equipe.html">Equipe</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Atividades</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="team-activities-main">
+        <div class="team-activities-container">
+            
+            <!-- Sidebar -->
+            <aside class="team-sidebar">
+                <div class="team-sidebar-header">
+                    <img src="../assets/organizacao-logo.jpg" alt="">
+                    <h3></h3>
+                </div>
+                
+                <nav class="team-sidebar-nav">
+                    <a href="equipe.html">
+                        <i class="fas fa-users"></i> Visão Geral
+                    </a>
+                    <a href="membros.html">
+                        <i class="fas fa-user-friends"></i> Membros
+                    </a>
+                    <a href="convites.html">
+                        <i class="fas fa-envelope"></i> Convites
+                    </a>
+                    <a href="permissoes.html">
+                        <i class="fas fa-lock"></i> Permissões
+                    </a>
+                    <a href="atividades.html" class="active">
+                        <i class="fas fa-chart-bar"></i> Atividades
+                    </a>
+                    <a href="cargos.html">
+                        <i class="fas fa-briefcase"></i> Cargos
+                    </a>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="team-activities-content">
+                
+                <!-- Cabeçalho -->
+                <div class="team-activities-header">
+                    <h1>Atividades da Equipe</h1>
+                    <select class="activity-period">
+                        <option value="hoje">Hoje</option>
+                        <option value="7dias">Últimos 7 dias</option>
+                        <option value="30dias" selected>Últimos 30 dias</option>
+                        <option value="90dias">Últimos 90 dias</option>
+                    </select>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="team-activity-filters">
+                    <button class="activity-filter active">Todas</button>
+                    <button class="activity-filter">Eventos</button>
+                    <button class="activity-filter">Ingressos</button>
+                    <button class="activity-filter">Financeiro</button>
+                    <button class="activity-filter">Equipe</button>
+                </div>
+                
+                <!-- Lista de Atividades -->
+                <div class="team-activity-list">
+                    
+                    <!-- Atividade 1 -->
+                    <div class="team-activity-item">
+                        <div class="activity-member">
+                            <img src="../assets/membro1.jpg" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <h3></h3>
+                            <p></p>
+                            <span class="activity-time"><i class="far fa-clock"></i> </span>
+                        </div>
+                        <div class="activity-type">
+                            <span class="type-badge evento">Evento</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Atividade 2 -->
+                    <div class="team-activity-item">
+                        <div class="activity-member">
+                            <img src="../assets/membro2.jpg" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <h3></h3>
+                            <p></p>
+                            <span class="activity-time"><i class="far fa-clock"></i> </span>
+                        </div>
+                        <div class="activity-type">
+                            <span class="type-badge ingresso">Ingresso</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Atividade 3 -->
+                    <div class="team-activity-item">
+                        <div class="activity-member">
+                            <img src="../assets/membro3.jpg" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <h3></h3>
+                            <p></p>
+                            <span class="activity-time"><i class="far fa-clock"></i> </span>
+                        </div>
+                        <div class="activity-type">
+                            <span class="type-badge financeiro">Financeiro</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Atividade 4 -->
+                    <div class="team-activity-item">
+                        <div class="activity-member">
+                            <img src="../assets/membro4.jpg" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <h3></h3>
+                            <p></p>
+                            <span class="activity-time"><i class="far fa-clock"></i> </span>
+                        </div>
+                        <div class="activity-type">
+                            <span class="type-badge equipe">Equipe</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Atividade 5 -->
+                    <div class="team-activity-item">
+                        <div class="activity-member">
+                            <img src="../assets/membro5.jpg" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <h3></h3>
+                            <p></p>
+                            <span class="activity-time"><i class="far fa-clock"></i> </span>
+                        </div>
+                        <div class="activity-type">
+                            <span class="type-badge evento">Evento</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resumo de Atividades -->
+                <div class="team-activity-summary">
+                    <h2>Resumo</h2>
+                    
+                    <div class="summary-grid">
+                        <div class="summary-card">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="summary-value"></span>
+                                <span class="summary-label">Eventos Criados</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <i class="fas fa-ticket-alt"></i>
+                            <div>
+                                <span class="summary-value"></span>
+                                <span class="summary-label">Ingressos Gerenciados</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <span class="summary-value">R$</span>
+                                <span class="summary-label">Transações</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <span class="summary-value"></span>
+                                <span class="summary-label">Membros Ativos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
