@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header do Admin -->
+    <header class="admin-header">
+        <div class="admin-header-container">
+            <div class="admin-logo">
+                <a href="../dashboard.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Painel Admin</span>
+                </a>
+            </div>
+            
+            <div class="admin-header-actions">
+                <button class="admin-search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+                <button class="admin-notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">5</span>
+                </button>
+                
+                <div class="admin-user-menu">
+                    <button class="admin-user-avatar">
+                        <img src="../../../assets/admin-avatar.jpg" alt="">
+                        <span>Administrador</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="admin-user-dropdown">
+                        <a href="../dashboard.html"><i class="fas fa-dashboard"></i> Dashboard</a>
+                        <a href="../../configuracoes/perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                        <a href="../../configuracoes/geral.html"><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="../../../index.html"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                        <a href="../login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="admin-main">
+        <div class="admin-container">
+            
+            <!-- Sidebar -->
+            <aside class="admin-sidebar">
+                <nav class="admin-nav">
+                    <div class="admin-nav-section">
+                        <h3>Principal</h3>
+                        <a href="../dashboard.html">
+                            <i class="fas fa-dashboard"></i> Dashboard
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Usuários</h3>
+                        <a href="usuarios.html" class="active">
+                            <i class="fas fa-users"></i> Usuários
+                        </a>
+                        <a href="organizadores.html">
+                            <i class="fas fa-building"></i> Organizadores
+                        </a>
+                        <a href="administradores.html">
+                            <i class="fas fa-user-shield"></i> Administradores
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Organizações</h3>
+                        <a href="../organizacoes/organizacoes.html">
+                            <i class="fas fa-building"></i> Organizações
+                        </a>
+                        <a href="../organizacoes/pendentes.html">
+                            <i class="fas fa-clock"></i> Pendentes
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Eventos</h3>
+                        <a href="../eventos/eventos.html">
+                            <i class="fas fa-calendar"></i> Eventos
+                        </a>
+                        <a href="../eventos/pendentes.html">
+                            <i class="fas fa-clock"></i> Pendentes
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Financeiro</h3>
+                        <a href="../financeiro/dashboard.html">
+                            <i class="fas fa-chart-line"></i> Financeiro
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Sistema</h3>
+                        <a href="../seguranca/logs.html">
+                            <i class="fas fa-history"></i> Logs
+                        </a>
+                        <a href="../../configuracoes/geral.html">
+                            <i class="fas fa-cog"></i> Configurações
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="admin-content">
+                
+                <!-- Cabeçalho -->
+                <div class="admin-content-header">
+                    <div>
+                        <h1>Usuários</h1>
+                        <p></p>
+                    </div>
+                    <button class="btn-add-user">
+                        <i class="fas fa-plus"></i> Adicionar Usuário
+                    </button>
+                </div>
+                
+                <!-- Estatísticas -->
+                <div class="admin-stats-grid">
+                    <div class="admin-stat-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Total de Usuários</span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <i class="fas fa-user-check"></i>
+                        <div>
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Ativos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <i class="fas fa-user-clock"></i>
+                        <div>
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Pendentes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stat-card">
+                        <i class="fas fa-user-slash"></i>
+                        <div>
+                            <span class="admin-stat-value"></span>
+                            <span class="admin-stat-label">Bloqueados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="admin-filters">
+                    <div class="admin-search">
+                        <input type="text" placeholder="Buscar usuário...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <select class="admin-filter">
+                        <option value="">Todos os Tipos</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="organizador">Organizador</option>
+                        <option value="promotor">Promotor</option>
+                    </select>
+                    
+                    <select class="admin-filter">
+                        <option value="">Todos os Status</option>
+                        <option value="ativo">Ativo</option>
+                        <option value="pendente">Pendente</option>
+                        <option value="bloqueado">Bloqueado</option>
+                    </select>
+                </div>
+                
+                <!-- Tabela de Usuários -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Usuário</th>
+                                <th>E-mail</th>
+                                <th>Tipo</th>
+                                <th>Data de Cadastro</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <img src="../../../assets/cliente1.jpg" alt="">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td><span class="user-type cliente">Cliente</span></td>
+                                <td></td>
+                                <td><span class="admin-status active">Ativo</span></td>
+                                <td>
+                                    <a href="cliente.html" class="btn-view"><i class="fas fa-eye"></i></a>
+                                    <button class="btn-block"><i class="fas fa-ban"></i></button>
+                                    <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <img src="../../../assets/cliente2.jpg" alt="">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td><span class="user-type organizador">Organizador</span></td>
+                                <td></td>
+                                <td><span class="admin-status active">Ativo</span></td>
+                                <td>
+                                    <a href="cliente.html" class="btn-view"><i class="fas fa-eye"></i></a>
+                                    <button class="btn-block"><i class="fas fa-ban"></i></button>
+                                    <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <img src="../../../assets/cliente3.jpg" alt="">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td><span class="user-type cliente">Cliente</span></td>
+                                <td></td>
+                                <td><span class="admin-status pending">Pendente</span></td>
+                                <td>
+                                    <a href="cliente.html" class="btn-view"><i class="fas fa-eye"></i></a>
+                                    <button class="btn-block"><i class="fas fa-ban"></i></button>
+                                    <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-cell">
+                                        <img src="../../../assets/cliente4.jpg" alt="">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td><span class="user-type promotor">Promotor</span></td>
+                                <td></td>
+                                <td><span class="admin-status blocked">Bloqueado</span></td>
+                                <td>
+                                    <a href="cliente.html" class="btn-view"><i class="fas fa-eye"></i></a>
+                                    <button class="btn-unblock"><i class="fas fa-check"></i></button>
+                                    <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Paginação -->
+                <div class="admin-pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html>
