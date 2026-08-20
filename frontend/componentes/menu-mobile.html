@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Menu Mobile</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Botão Hamburguer -->
+    <div class="hamburger" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+        <!-- Cabeçalho do Menu -->
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- Busca no Menu Mobile -->
+        <div class="mobile-search">
+            <form class="mobile-search-form">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        
+        <!-- Navegação Principal -->
+        <nav class="mobile-nav">
+            <a href="../index.html" class="mobile-nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            
+            <a href="../eventos.html" class="mobile-nav-link">
+                <i class="fas fa-calendar"></i>
+                <span>Eventos</span>
+            </a>
+            
+            <a href="../categorias.html" class="mobile-nav-link">
+                <i class="fas fa-tags"></i>
+                <span>Categorias</span>
+            </a>
+            
+            <a href="../blog.html" class="mobile-nav-link">
+                <i class="fas fa-blog"></i>
+                <span>Blog</span>
+            </a>
+            
+            <a href="../sobre.html" class="mobile-nav-link">
+                <i class="fas fa-info-circle"></i>
+                <span>Sobre</span>
+            </a>
+            
+            <a href="../contato.html" class="mobile-nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contato</span>
+            </a>
+            
+            <a href="../faq.html" class="mobile-nav-link">
+                <i class="fas fa-question-circle"></i>
+                <span>FAQ</span>
+            </a>
+        </nav>
+        
+        <!-- Divisor -->
+        <div class="mobile-menu-divider"></div>
+        
+        <!-- Menu do Usuário (quando logado) -->
+        <div class="mobile-user-menu">
+            <div class="mobile-user-header">
+                <img src="../assets/user-avatar.jpg" alt="Usuário">
+                <div>
+                    <strong></strong>
+                    <span></span>
+                </div>
+            </div>
+            
+            <nav class="mobile-user-nav">
+                <a href="../cliente/painel.html">
+                    <i class="fas fa-home"></i>
+                    <span>Painel</span>
+                </a>
+                
+                <a href="../cliente/meus-ingressos.html">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>Meus Ingressos</span>
+                </a>
+                
+                <a href="../cliente/meus-pedidos.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Meus Pedidos</span>
+                </a>
+                
+                <a href="../cliente/favoritos.html">
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
+                </a>
+                
+                <a href="../cliente/perfil.html">
+                    <i class="fas fa-user"></i>
+                    <span>Perfil</span>
+                </a>
+                
+                <a href="../cliente/configuracoes.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Configurações</span>
+                </a>
+                
+                <a href="../cliente/seguranca.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Segurança</span>
+                </a>
+                
+                <a href="../cliente/sair.html" class="mobile-logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </a>
+            </nav>
+        </div>
+        
+        <!-- Botões de Login/Cadastro (quando não logado) -->
+        <div class="mobile-auth-buttons">
+            <a href="../autenticacao/login.html" class="btn-login">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+            <a href="../autenticacao/cadastro.html" class="btn-cadastro">
+                <i class="fas fa-user-plus"></i> Cadastrar
+            </a>
+        </div>
+        
+        <!-- Divisor -->
+        <div class="mobile-menu-divider"></div>
+        
+        <!-- Redes Sociais -->
+        <div class="mobile-social">
+            <h4>Siga-nos</h4>
+            <div class="mobile-social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <!-- Rodapé do Menu -->
+        <div class="mobile-menu-footer">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <div class="mobile-legal-links">
+                <a href="../termos.html">Termos</a>
+                <a href="../privacidade.html">Privacidade</a>
+                <a href="../cookies.html">Cookies</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay do Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Menu Mobile Lateral (Alternativo) -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <button class="drawer-close" id="drawer-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="drawer-content">
+            <!-- Conteúdo do Drawer -->
+            <nav class="drawer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../eventos.html">Eventos</a>
+                <a href="../categorias.html">Categorias</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../contato.html">Contato</a>
+            </nav>
+        </div>
+        
+        <div class="drawer-footer">
+            <a href="../autenticacao/login.html">Login</a>
+            <a href="../autenticacao/cadastro.html">Cadastrar</a>
+        </div>
+    </div>
+
+    <!-- Menu Mobile Inferior (Bottom Navigation) -->
+    <nav class="bottom-nav">
+        <a href="../index.html" class="bottom-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        
+        <a href="../eventos.html" class="bottom-nav-item">
+            <i class="fas fa-calendar"></i>
+            <span>Eventos</span>
+        </a>
+        
+        <a href="../categorias.html" class="bottom-nav-item">
+            <i class="fas fa-tags"></i>
+            <span>Categorias</span>
+        </a>
+        
+        <a href="../cliente/favoritos.html" class="bottom-nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Favoritos</span>
+        </a>
+        
+        <a href="../cliente/painel.html" class="bottom-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
