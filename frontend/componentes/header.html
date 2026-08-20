@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Header</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+                
+                <!-- Menu de Navegação -->
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <!-- Ações do Header -->
+                <div class="nav-actions">
+                    <!-- Busca -->
+                    <button class="search-toggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                    <!-- Notificações -->
+                    <a href="../cliente/notificacoes.html" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    
+                    <!-- Carrinho -->
+                    <a href="../compra/checkout.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                    
+                    <!-- Login/Cadastro (quando não logado) -->
+                    <div class="auth-buttons">
+                        <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                        <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    </div>
+                    
+                    <!-- Menu do Usuário (quando logado) -->
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/user-avatar.jpg" alt="Usuário">
+                            <span>Nome do Usuário</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        
+                        <!-- Dropdown do Usuário -->
+                        <div class="user-dropdown">
+                            <div class="dropdown-header">
+                                <img src="../assets/user-avatar.jpg" alt="">
+                                <div>
+                                    <strong></strong>
+                                    <span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <a href="../cliente/painel.html">
+                                <i class="fas fa-home"></i> Painel
+                            </a>
+                            <a href="../cliente/meus-ingressos.html">
+                                <i class="fas fa-ticket-alt"></i> Meus Ingressos
+                            </a>
+                            <a href="../cliente/meus-pedidos.html">
+                                <i class="fas fa-shopping-bag"></i> Meus Pedidos
+                            </a>
+                            <a href="../cliente/favoritos.html">
+                                <i class="fas fa-heart"></i> Favoritos
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <a href="../cliente/perfil.html">
+                                <i class="fas fa-user"></i> Perfil
+                            </a>
+                            <a href="../cliente/configuracoes.html">
+                                <i class="fas fa-cog"></i> Configurações
+                            </a>
+                            <a href="../cliente/seguranca.html">
+                                <i class="fas fa-shield-alt"></i> Segurança
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <a href="../cliente/sair.html" class="dropdown-logout">
+                                <i class="fas fa-sign-out-alt"></i> Sair
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Mobile -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Barra de Busca Expansível -->
+        <div class="search-bar">
+            <form class="search-form">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar eventos, shows, teatros...">
+                </div>
+                <button type="submit" class="btn-search">Buscar</button>
+                <button type="button" class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="../index.html"></a>
+            </div>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+            <a href="../categorias.html"><i class="fas fa-tags"></i> Categorias</a>
+            <a href="../blog.html"><i class="fas fa-blog"></i> Blog</a>
+            <a href="../sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
+            <a href="../contato.html"><i class="fas fa-envelope"></i> Contato</a>
+        </nav>
+        
+        <div class="mobile-menu-footer">
+            <a href="../autenticacao/login.html" class="btn-login">Login</a>
+            <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+        </div>
+    </div>
+
+    <!-- Overlay do Menu Mobile -->
+    <div class="menu-overlay"></div>
+
+    <!-- Header Simplificado para Páginas de Autenticação -->
+    <header class="auth-header">
+        <div class="auth-header-container">
+            <div class="logo">
+                <a href="../index.html"></a>
+            </div>
+            <a href="../index.html" class="btn-back-home">
+                <i class="fas fa-arrow-left"></i> Voltar ao Site
+            </a>
+        </div>
+    </header>
+
+    <!-- Header para Páginas de Checkout -->
+    <header class="checkout-header">
+        <div class="checkout-header-container">
+            <div class="logo">
+                <a href="../index.html"></a>
+            </div>
+            <div class="checkout-security">
+                <i class="fas fa-lock"></i>
+                <span>Compra 100% Segura</span>
+            </div>
+            <a href="../contato.html" class="checkout-help">
+                <i class="fas fa-headset"></i> Ajuda
+            </a>
+        </div>
+    </header>
+
+    <!-- Header para Dashboard do Cliente -->
+    <header class="dashboard-header">
+        <div class="dashboard-header-container">
+            <div class="logo">
+                <a href="../index.html"></a>
+            </div>
+            
+            <div class="dashboard-header-actions">
+                <a href="../eventos.html" class="btn-explore">
+                    <i class="fas fa-compass"></i> Explorar Eventos
+                </a>
+                
+                <a href="../cliente/notificacoes.html" class="notification-icon">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </a>
+                
+                <div class="user-menu">
+                    <button class="user-avatar">
+                        <img src="../assets/user-avatar.jpg" alt="">
+                        <span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="../cliente/painel.html"><i class="fas fa-home"></i> Painel</a>
+                        <a href="../cliente/meus-ingressos.html"><i class="fas fa-ticket-alt"></i> Meus Ingressos</a>
+                        <a href="../cliente/perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                        <a href="../cliente/configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
