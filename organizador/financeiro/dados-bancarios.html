@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="financeiro.html"><i class="fas fa-dollar-sign"></i> Financeiro</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="financeiro.html">Financeiro</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Dados Bancários</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="banking-data-main">
+        <div class="banking-data-container">
+            
+            <!-- Cabeçalho -->
+            <div class="banking-data-header">
+                <h1>Dados Bancários</h1>
+                <button class="btn-add-bank">
+                    <i class="fas fa-plus"></i> Adicionar Conta
+                </button>
+            </div>
+            
+            <!-- Contas Cadastradas -->
+            <div class="bank-accounts-list">
+                
+                <!-- Conta Principal -->
+                <div class="bank-account-card">
+                    <div class="bank-account-header">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="bank-info">
+                            <h3>Conta Principal</h3>
+                            <span class="bank-default-badge">Padrão</span>
+                        </div>
+                        <button class="btn-bank-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    
+                    <div class="bank-account-body">
+                        <div class="bank-details">
+                            <div class="bank-detail-item">
+                                <span>Banco</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Agência</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Conta</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Tipo</span>
+                                <strong>Conta Corrente</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="bank-holder">
+                            <span>Titular</span>
+                            <strong></strong>
+                            <p>CPF/CNPJ: </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bank-account-footer">
+                        <button class="btn-edit-bank"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn-set-default"><i class="fas fa-star"></i> Tornar Padrão</button>
+                        <button class="btn-delete-bank"><i class="fas fa-trash"></i> Excluir</button>
+                    </div>
+                </div>
+                
+                <!-- Conta Secundária -->
+                <div class="bank-account-card">
+                    <div class="bank-account-header">
+                        <div class="bank-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="bank-info">
+                            <h3>Conta Secundária</h3>
+                        </div>
+                        <button class="btn-bank-menu"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    
+                    <div class="bank-account-body">
+                        <div class="bank-details">
+                            <div class="bank-detail-item">
+                                <span>Banco</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Agência</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Conta</span>
+                                <strong></strong>
+                            </div>
+                            <div class="bank-detail-item">
+                                <span>Tipo</span>
+                                <strong>Conta Poupança</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="bank-holder">
+                            <span>Titular</span>
+                            <strong></strong>
+                            <p>CPF/CNPJ: </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bank-account-footer">
+                        <button class="btn-edit-bank"><i class="fas fa-edit"></i> Editar</button>
+                        <button class="btn-set-default"><i class="fas fa-star"></i> Tornar Padrão</button>
+                        <button class="btn-delete-bank"><i class="fas fa-trash"></i> Excluir</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulário de Nova Conta -->
+            <div class="new-bank-form">
+                <h2>Adicionar Conta Bancária</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="banco-nome">Banco *</label>
+                        <select id="banco-nome" required>
+                            <option value="">Selecione...</option>
+                            <option value="001">Banco do Brasil</option>
+                            <option value="104">Caixa Econômica</option>
+                            <option value="237">Bradesco</option>
+                            <option value="341">Itaú</option>
+                            <option value="260">Nubank</option>
+                            <option value="077">Inter</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="banco-agencia">Agência *</label>
+                            <input type="text" id="banco-agencia" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="banco-digito-agencia">Dígito</label>
+                            <input type="text" id="banco-digito-agencia">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="banco-conta">Conta *</label>
+                            <input type="text" id="banco-conta" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="banco-digito-conta">Dígito *</label>
+                            <input type="text" id="banco-digito-conta" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="banco-tipo">Tipo de Conta *</label>
+                            <select id="banco-tipo" required>
+                                <option value="">Selecione...</option>
+                                <option value="corrente">Conta Corrente</option>
+                                <option value="poupanca">Conta Poupança</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="banco-titular">Titular *</label>
+                            <input type="text" id="banco-titular" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="banco-cpf-cnpj">CPF/CNPJ do Titular *</label>
+                        <input type="text" id="banco-cpf-cnpj" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Tornar esta conta padrão
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Confirmo que os dados bancários estão corretos
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Salvar Conta
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Segurança -->
+            <div class="banking-security">
+                <div class="security-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="security-info">
+                    <h3>Seus dados estão protegidos</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
