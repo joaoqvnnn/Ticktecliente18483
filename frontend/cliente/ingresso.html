@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/user-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="painel.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="meus-ingressos.html"><i class="fas fa-ticket-alt"></i> Meus Ingressos</a>
+                            <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="../autenticacao/login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="painel.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="meus-ingressos.html">Meus Ingressos</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Ingresso</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="ticket-detail-main">
+        <div class="ticket-detail-container">
+            
+            <!-- Cabeçalho -->
+            <div class="ticket-detail-header">
+                <a href="meus-ingressos.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </a>
+                <h1>Detalhes do Ingresso</h1>
+            </div>
+            
+            <!-- Ingresso -->
+            <div class="ticket-display">
+                <div class="ticket-card-visual">
+                    <!-- Cabeçalho do Ingresso -->
+                    <div class="ticket-visual-header">
+                        <div class="ticket-logo">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h2></h2>
+                        <span class="ticket-verified">
+                            <i class="fas fa-check-circle"></i> Verificado
+                        </span>
+                    </div>
+                    
+                    <!-- QR Code -->
+                    <div class="ticket-qrcode-large">
+                        <div class="qrcode-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                            <p>QR Code</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Informações do Ingresso -->
+                    <div class="ticket-info-grid">
+                        <div class="ticket-info-item">
+                            <span>Evento</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Data</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Horário</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Local</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Setor</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Tipo</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Participante</span>
+                            <strong></strong>
+                        </div>
+                        
+                        <div class="ticket-info-item">
+                            <span>Código</span>
+                            <strong></strong>
+                        </div>
+                    </div>
+                    
+                    <!-- Rodapé do Ingresso -->
+                    <div class="ticket-visual-footer">
+                        <span>Apresente este QR Code na entrada do evento</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ações do Ingresso -->
+            <div class="ticket-actions">
+                <button class="btn-download-ticket">
+                    <i class="fas fa-download"></i> Baixar Ingresso
+                </button>
+                
+                <button class="btn-print-ticket">
+                    <i class="fas fa-print"></i> Imprimir
+                </button>
+                
+                <button class="btn-share-ticket">
+                    <i class="fas fa-share"></i> Compartilhar
+                </button>
+                
+                <button class="btn-add-wallet">
+                    <i class="fas fa-wallet"></i> Adicionar à Carteira
+                </button>
+            </div>
+            
+            <!-- Informações Adicionais -->
+            <div class="ticket-additional-info">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Informações Importantes</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> </li>
+                        <li><i class="fas fa-check"></i> </li>
+                        <li><i class="fas fa-check"></i> </li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Como Chegar</h3>
+                    <p></p>
+                    <button class="btn-open-map">
+                        <i class="fas fa-map"></i> Abrir no Maps
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Transferência de Ingresso -->
+            <div class="ticket-transfer">
+                <div class="transfer-header">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Transferir Ingresso</h3>
+                </div>
+                <p></p>
+                
+                <form class="transfer-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="transferir-nome">Nome do Destinatário</label>
+                            <input type="text" id="transferir-nome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="transferir-email">E-mail do Destinatário</label>
+                            <input type="email" id="transferir-email">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-transfer-ticket">
+                        <i class="fas fa-paper-plane"></i> Transferir
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
