@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="organizacao.html"><i class="fas fa-building"></i> Minha Organização</a>
+                            <a href="eventos.html"><i class="fas fa-calendar"></i> Meus Eventos</a>
+                            <a href="equipe.html"><i class="fas fa-users"></i> Equipe</a>
+                            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="organizacao.html">Organização</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Documentos</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="org-documents-main">
+        <div class="org-documents-container">
+            
+            <!-- Sidebar -->
+            <aside class="org-data-sidebar">
+                <div class="org-sidebar-header">
+                    <img src="../assets/organizacao-logo.jpg" alt="">
+                    <h3></h3>
+                </div>
+                
+                <nav class="org-sidebar-nav">
+                    <a href="organizacao.html">
+                        <i class="fas fa-building"></i> Visão Geral
+                    </a>
+                    <a href="dados.html">
+                        <i class="fas fa-database"></i> Dados
+                    </a>
+                    <a href="contatos.html">
+                        <i class="fas fa-address-book"></i> Contatos
+                    </a>
+                    <a href="eventos.html">
+                        <i class="fas fa-calendar"></i> Eventos
+                    </a>
+                    <a href="equipe.html">
+                        <i class="fas fa-users"></i> Equipe
+                    </a>
+                    <a href="redes-sociais.html">
+                        <i class="fas fa-share-alt"></i> Redes Sociais
+                    </a>
+                    <a href="documentos.html" class="active">
+                        <i class="fas fa-file-alt"></i> Documentos
+                    </a>
+                    <a href="configuracoes.html">
+                        <i class="fas fa-cog"></i> Configurações
+                    </a>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="org-documents-content">
+                
+                <!-- Cabeçalho -->
+                <div class="org-documents-header">
+                    <h1>Documentos</h1>
+                    <button class="btn-upload-document">
+                        <i class="fas fa-upload"></i> Enviar Documento
+                    </button>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="org-documents-filters">
+                    <button class="doc-filter active">Todos</button>
+                    <button class="doc-filter">Verificados</button>
+                    <button class="doc-filter">Pendentes</button>
+                    <button class="doc-filter">Rejeitados</button>
+                </div>
+                
+                <!-- Lista de Documentos -->
+                <div class="org-documents-list">
+                    
+                    <!-- Documento 1 -->
+                    <div class="org-document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Contrato Social</h3>
+                            <p><i class="far fa-calendar"></i> Enviado em: </p>
+                            <p><i class="fas fa-file-pdf"></i> PDF - </p>
+                        </div>
+                        <div class="document-status">
+                            <span class="status-badge verified">
+                                <i class="fas fa-check-circle"></i> Verificado
+                            </span>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn-view-doc"><i class="fas fa-eye"></i></button>
+                            <button class="btn-download-doc"><i class="fas fa-download"></i></button>
+                            <button class="btn-delete-doc"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Documento 2 -->
+                    <div class="org-document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>CNPJ</h3>
+                            <p><i class="far fa-calendar"></i> Enviado em: </p>
+                            <p><i class="fas fa-file-image"></i> JPG - </p>
+                        </div>
+                        <div class="document-status">
+                            <span class="status-badge verified">
+                                <i class="fas fa-check-circle"></i> Verificado
+                            </span>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn-view-doc"><i class="fas fa-eye"></i></button>
+                            <button class="btn-download-doc"><i class="fas fa-download"></i></button>
+                            <button class="btn-delete-doc"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Documento 3 -->
+                    <div class="org-document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Alvará de Funcionamento</h3>
+                            <p><i class="far fa-calendar"></i> Enviado em: </p>
+                            <p><i class="fas fa-file-pdf"></i> PDF - </p>
+                        </div>
+                        <div class="document-status">
+                            <span class="status-badge pending">
+                                <i class="fas fa-clock"></i> Pendente
+                            </span>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn-view-doc"><i class="fas fa-eye"></i></button>
+                            <button class="btn-download-doc"><i class="fas fa-download"></i></button>
+                            <button class="btn-delete-doc"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Documento 4 -->
+                    <div class="org-document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3>Certidão Negativa</h3>
+                            <p><i class="far fa-calendar"></i> Enviado em: </p>
+                            <p><i class="fas fa-file-pdf"></i> PDF - </p>
+                        </div>
+                        <div class="document-status">
+                            <span class="status-badge rejected">
+                                <i class="fas fa-times-circle"></i> Rejeitado
+                            </span>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn-view-doc"><i class="fas fa-eye"></i></button>
+                            <button class="btn-reupload-doc"><i class="fas fa-upload"></i></button>
+                            <button class="btn-delete-doc"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Upload -->
+                <div class="org-document-upload-section">
+                    <h2>Enviar Documento</h2>
+                    
+                    <form class="org-document-form">
+                        <div class="form-group">
+                            <label for="doc-tipo">Tipo de Documento *</label>
+                            <select id="doc-tipo" required>
+                                <option value="">Selecione...</option>
+                                <option value="contrato">Contrato Social</option>
+                                <option value="cnpj">CNPJ</option>
+                                <option value="alvara">Alvará de Funcionamento</option>
+                                <option value="certidao">Certidão Negativa</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="doc-arquivo">Arquivo *</label>
+                            <div class="file-upload">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p></p>
+                                <input type="file" id="doc-arquivo" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="doc-observacoes">Observações</label>
+                            <textarea id="doc-observacoes" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-upload"></i> Enviar Documento
+                        </button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
