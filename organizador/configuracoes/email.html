@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="../financeiro/financeiro.html"><i class="fas fa-dollar-sign"></i> Financeiro</a>
+                            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="configuracoes.html">Configurações</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>E-mail</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="settings-main">
+        <div class="settings-container">
+            
+            <!-- Sidebar -->
+            <aside class="settings-sidebar">
+                <nav class="settings-nav">
+                    <a href="configuracoes.html">
+                        <i class="fas fa-cog"></i> Geral
+                    </a>
+                    <a href="perfil.html">
+                        <i class="fas fa-user"></i> Perfil
+                    </a>
+                    <a href="seguranca.html">
+                        <i class="fas fa-shield-alt"></i> Segurança
+                    </a>
+                    <a href="notificacoes.html">
+                        <i class="fas fa-bell"></i> Notificações
+                    </a>
+                    <a href="pagamentos.html">
+                        <i class="fas fa-credit-card"></i> Pagamentos
+                    </a>
+                    <a href="whatsapp.html">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="email.html" class="active">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </a>
+                    <a href="integracoes.html">
+                        <i class="fas fa-plug"></i> Integrações
+                    </a>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="settings-content">
+                
+                <!-- Cabeçalho -->
+                <div class="settings-header">
+                    <h1>E-mail</h1>
+                    <p></p>
+                </div>
+                
+                <!-- Remetente -->
+                <div class="form-section">
+                    <h2>Remetente</h2>
+                    
+                    <div class="form-group">
+                        <label for="email-nome">Nome do Remetente *</label>
+                        <input type="text" id="email-nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email-endereco">E-mail do Remetente *</label>
+                        <input type="email" id="email-endereco" required>
+                    </div>
+                </div>
+                
+                <!-- Configurações de Envio -->
+                <div class="form-section">
+                    <h2>Configurações de Envio</h2>
+                    
+                    <div class="settings-toggle-item">
+                        <div class="toggle-info">
+                            <h3>Enviar confirmação de cadastro</h3>
+                            <p></p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="settings-toggle-item">
+                        <div class="toggle-info">
+                            <h3>Enviar confirmação de compra</h3>
+                            <p></p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="settings-toggle-item">
+                        <div class="toggle-info">
+                            <h3>Enviar ingressos por e-mail</h3>
+                            <p></p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="settings-toggle-item">
+                        <div class="toggle-info">
+                            <h3>Enviar relatórios</h3>
+                            <p></p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Templates -->
+                <div class="form-section">
+                    <h2>Templates de E-mail</h2>
+                    
+                    <div class="template-list">
+                        <div class="template-item">
+                            <div class="template-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Confirmação de Cadastro</h3>
+                                <p></p>
+                            </div>
+                            <button class="btn-edit-template"><i class="fas fa-edit"></i></button>
+                        </div>
+                        
+                        <div class="template-item">
+                            <div class="template-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Confirmação de Compra</h3>
+                                <p></p>
+                            </div>
+                            <button class="btn-edit-template"><i class="fas fa-edit"></i></button>
+                        </div>
+                        
+                        <div class="template-item">
+                            <div class="template-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Ingresso Gerado</h3>
+                                <p></p>
+                            </div>
+                            <button class="btn-edit-template"><i class="fas fa-edit"></i></button>
+                        </div>
+                        
+                        <div class="template-item">
+                            <div class="template-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Recuperação de Senha</h3>
+                                <p></p>
+                            </div>
+                            <button class="btn-edit-template"><i class="fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Teste -->
+                <div class="form-section">
+                    <h2>Testar Envio</h2>
+                    
+                    <div class="form-group">
+                        <label for="email-teste">Enviar e-mail de teste para:</label>
+                        <div class="input-with-button">
+                            <input type="email" id="email-teste" placeholder="">
+                            <button class="btn-send-test">
+                                <i class="fas fa-paper-plane"></i> Enviar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botões -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Salvar Configurações
+                    </button>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
