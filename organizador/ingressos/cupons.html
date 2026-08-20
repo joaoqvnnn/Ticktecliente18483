@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Minha Organização</a>
+                            <a href="eventos.html"><i class="fas fa-calendar"></i> Meus Eventos</a>
+                            <a href="../equipe/equipe.html"><i class="fas fa-users"></i> Equipe</a>
+                            <a href="../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../organizacao/organizacao.html">Organização</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="eventos.html">Eventos</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Cupons</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="event-coupons-main">
+        <div class="event-coupons-container">
+            
+            <!-- Cabeçalho -->
+            <div class="event-coupons-header">
+                <h1>Cupons de Desconto</h1>
+                <button class="btn-add-coupon">
+                    <i class="fas fa-plus"></i> Criar Cupom
+                </button>
+            </div>
+            
+            <!-- Resumo -->
+            <div class="coupons-summary">
+                <div class="summary-stat">
+                    <i class="fas fa-tag"></i>
+                    <div>
+                        <span class="stat-value"></span>
+                        <span class="stat-label">Total de Cupons</span>
+                    </div>
+                </div>
+                
+                <div class="summary-stat">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span class="stat-value"></span>
+                        <span class="stat-label">Ativos</span>
+                    </div>
+                </div>
+                
+                <div class="summary-stat">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div>
+                        <span class="stat-value"></span>
+                        <span class="stat-label">Usos</span>
+                    </div>
+                </div>
+                
+                <div class="summary-stat">
+                    <i class="fas fa-dollar-sign"></i>
+                    <div>
+                        <span class="stat-value">R$</span>
+                        <span class="stat-label">Descontos Gerados</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lista de Cupons -->
+            <div class="coupons-list">
+                
+                <!-- Cupom 1 -->
+                <div class="coupon-card">
+                    <div class="coupon-card-left">
+                        <div class="coupon-code">
+                            <span>PROMO10</span>
+                        </div>
+                        <div class="coupon-discount">
+                            <span>10% OFF</span>
+                        </div>
+                    </div>
+                    <div class="coupon-card-right">
+                        <div class="coupon-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> Setores: </p>
+                            <p><i class="far fa-calendar"></i> Validade: </p>
+                        </div>
+                        <div class="coupon-stats">
+                            <div class="coupon-stat">
+                                <span>Usos</span>
+                                <strong>/</strong>
+                            </div>
+                        </div>
+                        <div class="coupon-status">
+                            <span class="status-badge active">Ativo</span>
+                        </div>
+                        <div class="coupon-actions">
+                            <button class="btn-edit-coupon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-toggle-coupon"><i class="fas fa-toggle-on"></i></button>
+                            <button class="btn-delete-coupon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupom 2 -->
+                <div class="coupon-card">
+                    <div class="coupon-card-left">
+                        <div class="coupon-code">
+                            <span>VIP20</span>
+                        </div>
+                        <div class="coupon-discount">
+                            <span>20% OFF</span>
+                        </div>
+                    </div>
+                    <div class="coupon-card-right">
+                        <div class="coupon-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> Setores: </p>
+                            <p><i class="far fa-calendar"></i> Validade: </p>
+                        </div>
+                        <div class="coupon-stats">
+                            <div class="coupon-stat">
+                                <span>Usos</span>
+                                <strong>/</strong>
+                            </div>
+                        </div>
+                        <div class="coupon-status">
+                            <span class="status-badge active">Ativo</span>
+                        </div>
+                        <div class="coupon-actions">
+                            <button class="btn-edit-coupon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-toggle-coupon"><i class="fas fa-toggle-on"></i></button>
+                            <button class="btn-delete-coupon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cupom 3 - Esgotado -->
+                <div class="coupon-card exhausted">
+                    <div class="coupon-card-left">
+                        <div class="coupon-code">
+                            <span>FLASH50</span>
+                        </div>
+                        <div class="coupon-discount">
+                            <span>50% OFF</span>
+                        </div>
+                    </div>
+                    <div class="coupon-card-right">
+                        <div class="coupon-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> Setores: </p>
+                            <p><i class="far fa-calendar"></i> Validade: </p>
+                        </div>
+                        <div class="coupon-stats">
+                            <div class="coupon-stat">
+                                <span>Usos</span>
+                                <strong>/</strong>
+                            </div>
+                        </div>
+                        <div class="coupon-status">
+                            <span class="status-badge closed">Esgotado</span>
+                        </div>
+                        <div class="coupon-actions">
+                            <button class="btn-edit-coupon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-toggle-coupon"><i class="fas fa-toggle-off"></i></button>
+                            <button class="btn-delete-coupon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulário de Novo Cupom -->
+            <div class="new-coupon-form">
+                <h2>Criar Cupom</h2>
+                
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cupom-codigo">Código do Cupom *</label>
+                            <input type="text" id="cupom-codigo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cupom-tipo">Tipo de Desconto *</label>
+                            <select id="cupom-tipo" required>
+                                <option value="">Selecione...</option>
+                                <option value="percentual">Percentual (%)</option>
+                                <option value="valor">Valor Fixo (R$)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cupom-valor">Valor do Desconto *</label>
+                            <input type="number" min="0" id="cupom-valor" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cupom-limite">Limite de Usos *</label>
+                            <input type="number" min="1" id="cupom-limite" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cupom-inicio">Data de Início *</label>
+                            <input type="datetime-local" id="cupom-inicio" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cupom-fim">Data de Fim *</label>
+                            <input type="datetime-local" id="cupom-fim" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Setores Aplicáveis</label>
+                        <div class="sector-select">
+                            <label class="checkbox-container">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Pista Premium
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Camarote
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                VIP
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Criar Cupom
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
