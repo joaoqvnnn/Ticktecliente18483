@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="admin-login-body">
+    <!-- Conteúdo Principal -->
+    <section class="admin-2fa-main">
+        <div class="admin-2fa-container">
+            
+            <!-- Card de 2FA -->
+            <div class="admin-2fa-card">
+                
+                <!-- Cabeçalho -->
+                <div class="admin-2fa-header">
+                    <div class="admin-2fa-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h1>Autenticação em Dois Fatores</h1>
+                    <p></p>
+                </div>
+                
+                <!-- Método de Verificação -->
+                <div class="admin-2fa-method">
+                    <div class="method-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Aplicativo Autenticador</h3>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <!-- Campo de Código -->
+                <div class="admin-2fa-code">
+                    <label for="admin-2fa-codigo">Digite o código de 6 dígitos</label>
+                    
+                    <div class="code-inputs">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]">
+                    </div>
+                    
+                    <p class="code-hint"></p>
+                </div>
+                
+                <!-- Botão de Verificação -->
+                <button class="btn-admin-verify">
+                    <i class="fas fa-check-circle"></i> Verificar e Entrar
+                </button>
+                
+                <!-- Timer -->
+                <div class="code-timer">
+                    <i class="fas fa-clock"></i>
+                    <span>O código expira em <strong>30</strong> segundos</span>
+                </div>
+                
+                <!-- Métodos Alternativos -->
+                <div class="alternative-methods">
+                    <p>Problemas com o código?</p>
+                    
+                    <div class="alternative-options">
+                        <button class="btn-alternative">
+                            <i class="fas fa-sms"></i>
+                            Enviar por SMS
+                        </button>
+                        
+                        <button class="btn-alternative">
+                            <i class="fas fa-envelope"></i>
+                            Enviar por E-mail
+                        </button>
+                        
+                        <button class="btn-alternative">
+                            <i class="fas fa-phone-alt"></i>
+                            Ligar para mim
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Códigos de Backup -->
+                <div class="backup-codes-section">
+                    <div class="backup-header">
+                        <i class="fas fa-key"></i>
+                        <h3>Códigos de Backup</h3>
+                    </div>
+                    <p></p>
+                    <button class="btn-backup-codes">
+                        Usar Código de Backup
+                    </button>
+                </div>
+                
+                <!-- Aviso de Segurança -->
+                <div class="admin-2fa-security">
+                    <i class="fas fa-shield-alt"></i>
+                    <p></p>
+                </div>
+            </div>
+            
+            <!-- Sidebar de Informações -->
+            <div class="admin-2fa-sidebar">
+                <h2><i class="fas fa-info-circle"></i> Sobre 2FA</h2>
+                
+                <div class="info-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <h3>Proteção Extra</h3>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <h3>Como Funciona</h3>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-key"></i>
+                    <div>
+                        <h3>Códigos de Backup</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="admin-login-footer">
+        <p>&copy; 2024 - Painel Administrativo - Todos os direitos reservados</p>
+        <div class="admin-login-footer-links">
+            <a href="../../termos.html">Termos</a>
+            <a href="../../privacidade.html">Privacidade</a>
+            <a href="../../contato.html">Suporte</a>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
