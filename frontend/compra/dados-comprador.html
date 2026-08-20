@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                    <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../eventos.html">Eventos</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../evento.html">Detalhes do Evento</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="selecionar-ingresso.html">Selecionar Ingresso</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Dados do Comprador</span>
+        </div>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <section class="checkout-progress">
+        <div class="checkout-container">
+            <div class="progress-steps">
+                <div class="progress-step completed">
+                    <div class="step-circle"><i class="fas fa-check"></i></div>
+                    <span>Ingressos</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step active">
+                    <div class="step-circle">2</div>
+                    <span>Dados</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-circle">3</div>
+                    <span>Pagamento</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-circle">4</div>
+                    <span>Confirmação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section class="buyer-data-main">
+        <div class="checkout-container">
+            <div class="checkout-layout">
+                
+                <!-- Coluna Principal - Formulário -->
+                <div class="checkout-content">
+                    
+                    <!-- Dados do Comprador -->
+                    <div class="form-section">
+                        <h2>Dados do Comprador</h2>
+                        
+                        <form class="buyer-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="comprador-nome">Nome Completo *</label>
+                                    <input type="text" id="comprador-nome" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="comprador-cpf">CPF *</label>
+                                    <input type="text" id="comprador-cpf" placeholder="000.000.000-00" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="comprador-email">E-mail *</label>
+                                    <input type="email" id="comprador-email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="comprador-telefone">Telefone *</label>
+                                    <input type="tel" id="comprador-telefone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="comprador-data-nascimento">Data de Nascimento *</label>
+                                    <input type="date" id="comprador-data-nascimento" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="comprador-genero">Gênero</label>
+                                    <select id="comprador-genero">
+                                        <option value="">Selecione...</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="outro">Outro</option>
+                                        <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Dados dos Participantes -->
+                    <div class="form-section">
+                        <h2>Dados dos Participantes</h2>
+                        <p class="form-info"><i class="fas fa-info-circle"></i> </p>
+                        
+                        <div class="participants-list">
+                            <!-- Participante 1 -->
+                            <div class="participant-card">
+                                <div class="participant-header">
+                                    <h3>Participante 1</h3>
+                                    <span class="participant-type">Titular</span>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="participante1-nome">Nome Completo *</label>
+                                        <input type="text" id="participante1-nome" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="participante1-cpf">CPF *</label>
+                                        <input type="text" id="participante1-cpf" placeholder="000.000.000-00" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="participante1-data">Data de Nascimento *</label>
+                                        <input type="date" id="participante1-data" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="participante1-documento">Documento com Foto *</label>
+                                        <input type="file" id="participante1-documento" accept="image/*,.pdf" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Participante 2 -->
+                            <div class="participant-card">
+                                <div class="participant-header">
+                                    <h3>Participante 2</h3>
+                                    <span class="participant-type">Meia Entrada</span>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="participante2-nome">Nome Completo *</label>
+                                        <input type="text" id="participante2-nome" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="participante2-cpf">CPF *</label>
+                                        <input type="text" id="participante2-cpf" placeholder="000.000.000-00" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="participante2-data">Data de Nascimento *</label>
+                                        <input type="date" id="participante2-data" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="participante2-documento">Comprovante Meia Entrada *</label>
+                                        <input type="file" id="participante2-documento" accept="image/*,.pdf" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-add-participant">
+                            <i class="fas fa-plus"></i> Adicionar Participante
+                        </button>
+                    </div>
+                    
+                    <!-- Termos e Condições -->
+                    <div class="form-section">
+                        <h2>Termos e Condições</h2>
+                        
+                        <div class="terms-checkboxes">
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                Li e aceito os <a href="../termos.html" target="_blank">Termos de Uso</a> *
+                            </label>
+                            
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                Li e aceito a <a href="../privacidade.html" target="_blank">Política de Privacidade</a> *
+                            </label>
+                            
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                Estou ciente das <a href="../reembolso.html" target="_blank">Políticas de Reembolso</a> *
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Botões de Ação -->
+                    <div class="selection-actions">
+                        <a href="selecionar-ingresso.html" class="btn-back">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                        <a href="pagamento.html" class="btn-continue">
+                            Ir para Pagamento <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar - Resumo -->
+                <aside class="checkout-sidebar">
+                    <div class="order-summary">
+                        <h3>Resumo do Pedido</h3>
+                        
+                        <div class="event-summary-mini">
+                            <img src="../assets/evento1.jpg" alt="">
+                            <div>
+                                <h4></h4>
+                                <p><i class="far fa-calendar"></i> </p>
+                                <p><i class="fas fa-map-marker-alt"></i> </p>
+                            </div>
+                        </div>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <span>Pista Premium x</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="order-item">
+                                <span>Meia Entrada x</span>
+                                <span>R$</span>
+                            </div>
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Taxa de Serviço</span>
+                                <span>R$</span>
+                            </div>
+                            <div class="total-row total-grand">
+                                <span>Total</span>
+                                <span>R$</span>
+                            </div>
+                        </div>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Seus dados estão protegidos</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
