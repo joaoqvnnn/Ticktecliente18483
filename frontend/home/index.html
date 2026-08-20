@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1></h1>
+            <p></p>
+            <div class="hero-buttons">
+                <a href="eventos.html" class="btn-primary">Ver Eventos</a>
+                <a href="sobre.html" class="btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Busca de Eventos -->
+    <section class="search-section">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar eventos..." class="search-input">
+                <select class="search-select">
+                    <option value="">Categoria</option>
+                    <option value="show">Shows</option>
+                    <option value="teatro">Teatro</option>
+                    <option value="esporte">Esportes</option>
+                    <option value="festival">Festivais</option>
+                </select>
+                <input type="date" class="search-date">
+                <button type="submit" class="btn-search">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Eventos em Destaque -->
+    <section class="featured-events">
+        <div class="section-header">
+            <h2>Eventos em Destaque</h2>
+            <a href="eventos.html" class="view-all">Ver Todos</a>
+        </div>
+        
+        <div class="events-grid">
+            <!-- Card de Evento 1 -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="assets/evento1.jpg" alt="">
+                    <span class="event-category">Show</span>
+                </div>
+                <div class="event-info">
+                    <h3></h3>
+                    <p class="event-date"><i class="far fa-calendar"></i> </p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> </p>
+                    <div class="event-footer">
+                        <span class="event-price"></span>
+                        <a href="detalhes-evento.html" class="btn-buy">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Evento 2 -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="assets/evento2.jpg" alt="">
+                    <span class="event-category">Teatro</span>
+                </div>
+                <div class="event-info">
+                    <h3></h3>
+                    <p class="event-date"><i class="far fa-calendar"></i> </p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> </p>
+                    <div class="event-footer">
+                        <span class="event-price"></span>
+                        <a href="detalhes-evento.html" class="btn-buy">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de Evento 3 -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="assets/evento3.jpg" alt="">
+                    <span class="event-category">Festival</span>
+                </div>
+                <div class="event-info">
+                    <h3></h3>
+                    <p class="event-date"><i class="far fa-calendar"></i> </p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> </p>
+                    <div class="event-footer">
+                        <span class="event-price"></span>
+                        <a href="detalhes-evento.html" class="btn-buy">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categories">
+        <div class="section-header">
+            <h2>Categorias</h2>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-music"></i>
+                <h3>Shows</h3>
+                <p></p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-theater-masks"></i>
+                <h3>Teatro</h3>
+                <p></p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-futbol"></i>
+                <h3>Esportes</h3>
+                <p></p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-fire"></i>
+                <h3>Festivais</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <h2>Como Funciona</h2>
+        </div>
+        
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-search"></i>
+                <h3>Encontre</h3>
+                <p></p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-ticket-alt"></i>
+                <h3>Escolha</h3>
+                <p></p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-credit-card"></i>
+                <h3>Pague</h3>
+                <p></p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <i class="fas fa-check-circle"></i>
+                <h3>Aproveite</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>O que dizem nossos clientes</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text"></p>
+                <div class="testimonial-author">
+                    <img src="assets/cliente1.jpg" alt="">
+                    <div>
+                        <h4></h4>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text"></p>
+                <div class="testimonial-author">
+                    <img src="assets/cliente2.jpg" alt="">
+                    <div>
+                        <h4></h4>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Fique por dentro</h2>
+            <p></p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Inscrever</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
