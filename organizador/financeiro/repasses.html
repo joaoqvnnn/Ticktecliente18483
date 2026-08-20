@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="financeiro.html"><i class="fas fa-dollar-sign"></i> Financeiro</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="financeiro.html">Financeiro</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Repasses</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="transfers-main">
+        <div class="transfers-container">
+            
+            <!-- Cabeçalho -->
+            <div class="transfers-header">
+                <h1>Repasses</h1>
+            </div>
+            
+            <!-- Resumo -->
+            <div class="transfers-summary">
+                <div class="transfer-summary-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <div>
+                        <span class="transfer-summary-value">R$</span>
+                        <span class="transfer-summary-label">Total Repassado</span>
+                    </div>
+                </div>
+                
+                <div class="transfer-summary-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="transfer-summary-value">R$</span>
+                        <span class="transfer-summary-label">Pendente</span>
+                    </div>
+                </div>
+                
+                <div class="transfer-summary-card">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <span class="transfer-summary-value"></span>
+                        <span class="transfer-summary-label">Próximo Repasse</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filtros -->
+            <div class="transfers-filters">
+                <button class="transfer-filter active">Todos</button>
+                <button class="transfer-filter">Pendentes</button>
+                <button class="transfer-filter">Processando</button>
+                <button class="transfer-filter">Concluídos</button>
+            </div>
+            
+            <!-- Lista de Repasses -->
+            <div class="transfers-list">
+                
+                <!-- Repasse 1 - Concluído -->
+                <div class="transfer-card">
+                    <div class="transfer-card-header">
+                        <div class="transfer-id">
+                            <span>Repasse #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="transfer-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="transfer-status">
+                            <span class="transfer-status-badge completed">Concluído</span>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-body">
+                        <div class="transfer-period">
+                            <h4>Período</h4>
+                            <p></p>
+                        </div>
+                        
+                        <div class="transfer-details">
+                            <div class="transfer-info-item">
+                                <span>Vendas</span>
+                                <strong></strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Bruto</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Taxas</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-footer">
+                        <button class="btn-view-transfer">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                        <button class="btn-download-receipt">
+                            <i class="fas fa-download"></i> Comprovante
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Repasse 2 - Processando -->
+                <div class="transfer-card">
+                    <div class="transfer-card-header">
+                        <div class="transfer-id">
+                            <span>Repasse #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="transfer-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="transfer-status">
+                            <span class="transfer-status-badge processing">Processando</span>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-body">
+                        <div class="transfer-period">
+                            <h4>Período</h4>
+                            <p></p>
+                        </div>
+                        
+                        <div class="transfer-details">
+                            <div class="transfer-info-item">
+                                <span>Vendas</span>
+                                <strong></strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Bruto</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Taxas</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-footer">
+                        <button class="btn-view-transfer">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Repasse 3 - Pendente -->
+                <div class="transfer-card">
+                    <div class="transfer-card-header">
+                        <div class="transfer-id">
+                            <span>Repasse #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="transfer-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="transfer-status">
+                            <span class="transfer-status-badge pending">Pendente</span>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-body">
+                        <div class="transfer-period">
+                            <h4>Período</h4>
+                            <p></p>
+                        </div>
+                        
+                        <div class="transfer-details">
+                            <div class="transfer-info-item">
+                                <span>Vendas</span>
+                                <strong></strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Bruto</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Taxas</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="transfer-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="transfer-card-footer">
+                        <button class="btn-view-transfer">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Configurações de Repasse -->
+            <div class="transfer-settings">
+                <h2>Configurações de Repasse</h2>
+                
+                <div class="transfer-setting-item">
+                    <div class="setting-info">
+                        <h3>Repasse Automático</h3>
+                        <p></p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                
+                <div class="transfer-setting-item">
+                    <div class="setting-info">
+                        <h3>Frequência</h3>
+                        <p></p>
+                    </div>
+                    <select class="transfer-frequency">
+                        <option value="diario">Diário</option>
+                        <option value="semanal" selected>Semanal</option>
+                        <option value="quinzenal">Quinzenal</option>
+                        <option value="mensal">Mensal</option>
+                    </select>
+                </div>
+                
+                <div class="transfer-setting-item">
+                    <div class="setting-info">
+                        <h3>Dia do Repasse</h3>
+                        <p></p>
+                    </div>
+                    <select class="transfer-day">
+                        <option value="segunda">Segunda-feira</option>
+                        <option value="terca">Terça-feira</option>
+                        <option value="quarta">Quarta-feira</option>
+                        <option value="quinta">Quinta-feira</option>
+                        <option value="sexta" selected>Sexta-feira</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Paginação -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
