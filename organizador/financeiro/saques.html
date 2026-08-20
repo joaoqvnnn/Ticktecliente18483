@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="financeiro.html"><i class="fas fa-dollar-sign"></i> Financeiro</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="financeiro.html">Financeiro</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Saques</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="withdrawals-main">
+        <div class="withdrawals-container">
+            
+            <!-- Cabeçalho -->
+            <div class="withdrawals-header">
+                <h1>Saques</h1>
+                <button class="btn-new-withdrawal">
+                    <i class="fas fa-plus"></i> Solicitar Saque
+                </button>
+            </div>
+            
+            <!-- Card Principal -->
+            <div class="withdrawal-main-card">
+                <div class="withdrawal-balance">
+                    <span class="withdrawal-label">Saldo Disponível para Saque</span>
+                    <span class="withdrawal-value">R$</span>
+                    <p></p>
+                </div>
+                <button class="btn-withdraw-now">
+                    <i class="fas fa-money-bill"></i> Sacar Agora
+                </button>
+            </div>
+            
+            <!-- Resumo -->
+            <div class="withdrawals-summary">
+                <div class="withdrawal-summary-card">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span class="withdrawal-summary-value">R$</span>
+                        <span class="withdrawal-summary-label">Total Sacado</span>
+                    </div>
+                </div>
+                
+                <div class="withdrawal-summary-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="withdrawal-summary-value">R$</span>
+                        <span class="withdrawal-summary-label">Em Processamento</span>
+                    </div>
+                </div>
+                
+                <div class="withdrawal-summary-card">
+                    <i class="fas fa-times-circle"></i>
+                    <div>
+                        <span class="withdrawal-summary-value">R$</span>
+                        <span class="withdrawal-summary-label">Recusados</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filtros -->
+            <div class="withdrawals-filters">
+                <button class="withdrawal-filter active">Todos</button>
+                <button class="withdrawal-filter">Pendentes</button>
+                <button class="withdrawal-filter">Processando</button>
+                <button class="withdrawal-filter">Concluídos</button>
+                <button class="withdrawal-filter">Recusados</button>
+            </div>
+            
+            <!-- Lista de Saques -->
+            <div class="withdrawals-list">
+                
+                <!-- Saque 1 - Concluído -->
+                <div class="withdrawal-card">
+                    <div class="withdrawal-card-header">
+                        <div class="withdrawal-id">
+                            <span>Saque #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="withdrawal-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="withdrawal-status">
+                            <span class="withdrawal-status-badge completed">Concluído</span>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-body">
+                        <div class="withdrawal-details">
+                            <div class="withdrawal-info-item">
+                                <span>Valor</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Taxa</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Conta</span>
+                                <strong>Banco - Agência - Conta</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-footer">
+                        <button class="btn-view-withdrawal">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                        <button class="btn-download-receipt">
+                            <i class="fas fa-download"></i> Comprovante
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Saque 2 - Processando -->
+                <div class="withdrawal-card">
+                    <div class="withdrawal-card-header">
+                        <div class="withdrawal-id">
+                            <span>Saque #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="withdrawal-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="withdrawal-status">
+                            <span class="withdrawal-status-badge processing">Processando</span>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-body">
+                        <div class="withdrawal-details">
+                            <div class="withdrawal-info-item">
+                                <span>Valor</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Taxa</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Conta</span>
+                                <strong>Banco - Agência - Conta</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-footer">
+                        <button class="btn-view-withdrawal">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Saque 3 - Pendente -->
+                <div class="withdrawal-card">
+                    <div class="withdrawal-card-header">
+                        <div class="withdrawal-id">
+                            <span>Saque #</span>
+                            <strong></strong>
+                        </div>
+                        <div class="withdrawal-date">
+                            <i class="far fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="withdrawal-status">
+                            <span class="withdrawal-status-badge pending">Pendente</span>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-body">
+                        <div class="withdrawal-details">
+                            <div class="withdrawal-info-item">
+                                <span>Valor</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Taxa</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Valor Líquido</span>
+                                <strong>R$</strong>
+                            </div>
+                            <div class="withdrawal-info-item">
+                                <span>Conta</span>
+                                <strong>Banco - Agência - Conta</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="withdrawal-card-footer">
+                        <button class="btn-cancel-withdrawal">
+                            <i class="fas fa-times"></i> Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulário de Novo Saque -->
+            <div class="new-withdrawal-form">
+                <h2>Solicitar Saque</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="saque-valor">Valor do Saque *</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                            <input type="number" step="0.01" min="0" id="saque-valor" required>
+                        </div>
+                        <p class="form-hint">Saldo disponível: R$</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="saque-conta">Conta de Destino *</label>
+                        <select id="saque-conta" required>
+                            <option value="">Selecione...</option>
+                            <option value="conta1">Banco - Agência - Conta</option>
+                            <option value="conta2">Banco - Agência - Conta</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Confirmo que os dados bancários estão corretos
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-check"></i> Solicitar Saque
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Paginação -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
