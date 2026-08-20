@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header do Admin -->
+    <header class="admin-header">
+        <div class="admin-header-container">
+            <div class="admin-logo">
+                <a href="../dashboard.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Painel Admin</span>
+                </a>
+            </div>
+            
+            <div class="admin-header-actions">
+                <button class="admin-search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+                <button class="admin-notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">5</span>
+                </button>
+                
+                <div class="admin-user-menu">
+                    <button class="admin-user-avatar">
+                        <img src="../../../assets/admin-avatar.jpg" alt="">
+                        <span>Administrador</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="admin-user-dropdown">
+                        <a href="../dashboard.html"><i class="fas fa-dashboard"></i> Dashboard</a>
+                        <a href="../../configuracoes/perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                        <a href="../../configuracoes/geral.html"><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="../../../index.html"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                        <a href="../login.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="admin-main">
+        <div class="admin-container">
+            
+            <!-- Sidebar -->
+            <aside class="admin-sidebar">
+                <nav class="admin-nav">
+                    <div class="admin-nav-section">
+                        <h3>Principal</h3>
+                        <a href="../dashboard.html">
+                            <i class="fas fa-dashboard"></i> Dashboard
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Usuários</h3>
+                        <a href="usuarios.html" class="active">
+                            <i class="fas fa-users"></i> Usuários
+                        </a>
+                        <a href="organizadores.html">
+                            <i class="fas fa-building"></i> Organizadores
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Organizações</h3>
+                        <a href="../organizacoes/organizacoes.html">
+                            <i class="fas fa-building"></i> Organizações
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Eventos</h3>
+                        <a href="../eventos/eventos.html">
+                            <i class="fas fa-calendar"></i> Eventos
+                        </a>
+                    </div>
+                    
+                    <div class="admin-nav-section">
+                        <h3>Financeiro</h3>
+                        <a href="../financeiro/dashboard.html">
+                            <i class="fas fa-chart-line"></i> Financeiro
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+            
+            <!-- Conteúdo Principal -->
+            <main class="admin-content">
+                
+                <!-- Cabeçalho -->
+                <div class="admin-user-detail-header">
+                    <a href="usuarios.html" class="btn-back">
+                        <i class="fas fa-arrow-left"></i> Voltar
+                    </a>
+                    <h1>Detalhes do Usuário</h1>
+                </div>
+                
+                <!-- Card do Usuário -->
+                <div class="admin-user-profile-card">
+                    <div class="user-avatar-large">
+                        <img src="../../../assets/cliente1.jpg" alt="">
+                        <span class="user-status active"></span>
+                    </div>
+                    <div class="user-info">
+                        <h2></h2>
+                        <span class="user-type cliente">Cliente</span>
+                        <span class="admin-status active">Ativo</span>
+                    </div>
+                    <div class="user-actions">
+                        <button class="btn-block-user">
+                            <i class="fas fa-ban"></i> Bloquear
+                        </button>
+                        <button class="btn-delete-user">
+                            <i class="fas fa-trash"></i> Excluir
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Informações -->
+                <div class="admin-user-info-grid">
+                    <div class="info-card">
+                        <h3>Informações Pessoais</h3>
+                        <div class="info-list">
+                            <div class="info-row">
+                                <span>Nome:</span>
+                                <strong></strong>
+                            </div>
+                            <div class="info-row">
+                                <span>CPF:</span>
+                                <strong></strong>
+                            </div>
+                            <div class="info-row">
+                                <span>Data de Nascimento:</span>
+                                <strong></strong>
+                            </div>
+                            <div class="info-row">
+                                <span>Gênero:</span>
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Contato</h3>
+                        <div class="info-list">
+                            <div class="info-row">
+                                <span>E-mail:</span>
+                                <strong></strong>
+                            </div>
+                            <div class="info-row">
+                                <span>Telefone:</span>
+                                <strong></strong>
+                            </div>
+                            <div class="info-row">
+                                <span>WhatsApp:</span>
+                                <strong></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Estatísticas -->
+                <div class="admin-user-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div>
+                            <span class="stat-value"></span>
+                            <span class="stat-label">Compras</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <i class="fas fa-ticket-alt"></i>
+                        <div>
+                            <span class="stat-value"></span>
+                            <span class="stat-label">Ingressos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <span class="stat-value">R$</span>
+                            <span class="stat-label">Total Gasto</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Histórico de Compras -->
+                <div class="admin-table-wrapper">
+                    <h3>Histórico de Compras</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Pedido</th>
+                                <th>Evento</th>
+                                <th>Data</th>
+                                <th>Ingressos</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>R$</td>
+                                <td><span class="admin-status completed">Concluído</span></td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>R$</td>
+                                <td><span class="admin-status completed">Concluído</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html>
