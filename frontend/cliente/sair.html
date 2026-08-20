@@ -8,14 +8,51 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="auth-body">
-    <!-- Header Simplificado -->
-    <header class="auth-header">
-        <div class="auth-header-container">
-            <div class="logo">
-                <a href="../index.html"></a>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../assets/user-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="painel.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="meus-ingressos.html"><i class="fas fa-ticket-alt"></i> Meus Ingressos</a>
+                            <a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+                            <a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a>
+                            <a href="sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Conteúdo Principal -->
@@ -31,48 +68,98 @@
             <h1>Você saiu da sua conta</h1>
             <p class="logout-description"></p>
             
-            <!-- Informações -->
-            <div class="logout-info">
-                <div class="logout-info-item">
+            <!-- Informações de Segurança -->
+            <div class="logout-security-info">
+                <div class="security-info-item">
                     <i class="fas fa-shield-alt"></i>
-                    <p></p>
+                    <div>
+                        <h3>Sessão Encerrada</h3>
+                        <p></p>
+                    </div>
                 </div>
                 
-                <div class="logout-info-item">
-                    <i class="fas fa-clock"></i>
-                    <p></p>
+                <div class="security-info-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <h3>Dados Protegidos</h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
             
             <!-- Ações -->
             <div class="logout-actions">
-                <a href="login.html" class="btn-primary">
+                <a href="../autenticacao/login.html" class="btn-primary">
                     <i class="fas fa-sign-in-alt"></i> Fazer Login Novamente
                 </a>
                 
                 <a href="../index.html" class="btn-secondary">
                     <i class="fas fa-home"></i> Voltar ao Início
                 </a>
+                
+                <a href="../eventos.html" class="btn-outline">
+                    <i class="fas fa-calendar"></i> Ver Eventos
+                </a>
             </div>
             
-            <!-- Sugestões -->
+            <!-- Eventos em Destaque -->
             <div class="logout-suggestions">
-                <h3>Você também pode gostar</h3>
+                <h3>Eventos em Destaque</h3>
+                <p></p>
                 
-                <div class="logout-event-suggestions">
-                    <a href="../eventos.html" class="logout-event-card">
+                <div class="logout-events-grid">
+                    <div class="logout-event-card">
+                        <img src="../assets/evento1.jpg" alt="">
+                        <div class="logout-event-info">
+                            <h4></h4>
+                            <p><i class="far fa-calendar"></i> </p>
+                            <a href="../evento.html" class="btn-view">Ver Evento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="logout-event-card">
+                        <img src="../assets/evento2.jpg" alt="">
+                        <div class="logout-event-info">
+                            <h4></h4>
+                            <p><i class="far fa-calendar"></i> </p>
+                            <a href="../evento.html" class="btn-view">Ver Evento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="logout-event-card">
+                        <img src="../assets/evento3.jpg" alt="">
+                        <div class="logout-event-info">
+                            <h4></h4>
+                            <p><i class="far fa-calendar"></i> </p>
+                            <a href="../evento.html" class="btn-view">Ver Evento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categorias -->
+            <div class="logout-categories">
+                <h3>Explore por Categoria</h3>
+                
+                <div class="logout-category-list">
+                    <a href="../categorias.html" class="logout-category">
                         <i class="fas fa-music"></i>
                         <span>Shows</span>
                     </a>
                     
-                    <a href="../eventos.html" class="logout-event-card">
+                    <a href="../categorias.html" class="logout-category">
                         <i class="fas fa-theater-masks"></i>
                         <span>Teatro</span>
                     </a>
                     
-                    <a href="../eventos.html" class="logout-event-card">
+                    <a href="../categorias.html" class="logout-category">
                         <i class="fas fa-futbol"></i>
                         <span>Esportes</span>
+                    </a>
+                    
+                    <a href="../categorias.html" class="logout-category">
+                        <i class="fas fa-fire"></i>
+                        <span>Festivais</span>
                     </a>
                 </div>
             </div>
@@ -84,15 +171,52 @@
         </div>
     </section>
 
-    <!-- Footer Simplificado -->
-    <footer class="auth-footer">
-        <div class="auth-footer-container">
-            <p>&copy; 2024 - Todos os direitos reservados</p>
-            <div class="auth-footer-links">
-                <a href="../termos.html">Termos</a>
-                <a href="../privacidade.html">Privacidade</a>
-                <a href="../contato.html">Contato</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
         </div>
     </footer>
 
