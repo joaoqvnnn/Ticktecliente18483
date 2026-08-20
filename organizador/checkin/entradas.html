@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">5</span>
+                    </a>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <img src="../../assets/organizacao-avatar.jpg" alt="">
+                            <span></span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="../painel/index.html"><i class="fas fa-home"></i> Painel</a>
+                            <a href="../organizacao/organizacao.html"><i class="fas fa-building"></i> Organização</a>
+                            <a href="../eventos/eventos.html"><i class="fas fa-calendar"></i> Eventos</a>
+                            <a href="checkin.html"><i class="fas fa-qrcode"></i> Check-in</a>
+                            <a href="../../cliente/sair.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../painel/index.html">Painel</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="checkin.html">Check-in</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Entradas</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="entries-main">
+        <div class="entries-container">
+            
+            <!-- Cabeçalho -->
+            <div class="entries-header">
+                <div>
+                    <h1>Controle de Entradas</h1>
+                    <p></p>
+                </div>
+                <button class="btn-export-entries">
+                    <i class="fas fa-download"></i> Exportar
+                </button>
+            </div>
+            
+            <!-- Evento Atual -->
+            <div class="entries-event-info">
+                <h2>Evento Atual</h2>
+                <div class="event-mini-banner">
+                    <img src="../../assets/evento1.jpg" alt="">
+                    <div>
+                        <h3></h3>
+                        <p><i class="far fa-calendar"></i> </p>
+                        <p><i class="fas fa-map-marker-alt"></i> </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resumo de Entradas -->
+            <div class="entries-summary">
+                <div class="entry-summary-card">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <div>
+                        <span class="entry-stat-value"></span>
+                        <span class="entry-stat-label">Entradas Realizadas</span>
+                    </div>
+                </div>
+                
+                <div class="entry-summary-card">
+                    <i class="fas fa-chair"></i>
+                    <div>
+                        <span class="entry-stat-value"></span>
+                        <span class="entry-stat-label">Capacidade Total</span>
+                    </div>
+                </div>
+                
+                <div class="entry-summary-card">
+                    <i class="fas fa-user-clock"></i>
+                    <div>
+                        <span class="entry-stat-value"></span>
+                        <span class="entry-stat-label">Aguardando Entrada</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controle por Setor -->
+            <div class="entries-by-sector">
+                <h2>Entradas por Setor</h2>
+                
+                <div class="sector-entries-grid">
+                    <div class="sector-entry-card">
+                        <div class="sector-entry-header">
+                            <h3>Pista Premium</h3>
+                            <span class="sector-capacity">/</span>
+                        </div>
+                        <div class="sector-entry-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="sector-entry-stats">
+                            <span>Entraram: </span>
+                            <span>Restantes: </span>
+                        </div>
+                    </div>
+                    
+                    <div class="sector-entry-card">
+                        <div class="sector-entry-header">
+                            <h3>Camarote</h3>
+                            <span class="sector-capacity">/</span>
+                        </div>
+                        <div class="sector-entry-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                        <div class="sector-entry-stats">
+                            <span>Entraram: </span>
+                            <span>Restantes: </span>
+                        </div>
+                    </div>
+                    
+                    <div class="sector-entry-card">
+                        <div class="sector-entry-header">
+                            <h3>VIP</h3>
+                            <span class="sector-capacity">/</span>
+                        </div>
+                        <div class="sector-entry-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="sector-entry-stats">
+                            <span>Entraram: </span>
+                            <span>Restantes: </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Últimas Entradas -->
+            <div class="recent-entries">
+                <h2>Últimas Entradas</h2>
+                
+                <div class="recent-entries-list">
+                    <div class="recent-entry-item">
+                        <div class="entry-avatar">
+                            <img src="../../assets/cliente1.jpg" alt="">
+                        </div>
+                        <div class="entry-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> </p>
+                        </div>
+                        <div class="entry-time">
+                            <i class="far fa-clock"></i>
+                            <span></span>
+                        </div>
+                        <span class="entry-status success">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="recent-entry-item">
+                        <div class="entry-avatar">
+                            <img src="../../assets/cliente2.jpg" alt="">
+                        </div>
+                        <div class="entry-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> </p>
+                        </div>
+                        <div class="entry-time">
+                            <i class="far fa-clock"></i>
+                            <span></span>
+                        </div>
+                        <span class="entry-status success">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="recent-entry-item">
+                        <div class="entry-avatar">
+                            <img src="../../assets/cliente3.jpg" alt="">
+                        </div>
+                        <div class="entry-info">
+                            <h3></h3>
+                            <p><i class="fas fa-chair"></i> </p>
+                        </div>
+                        <div class="entry-time">
+                            <i class="far fa-clock"></i>
+                            <span></span>
+                        </div>
+                        <span class="entry-status success">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../../eventos.html">Eventos</a></li>
+                    <li><a href="../../categorias.html">Categorias</a></li>
+                    <li><a href="../../blog.html">Blog</a></li>
+                    <li><a href="../../sobre.html">Sobre</a></li>
+                    <li><a href="../../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../../termos.html">Termos de Uso</a></li>
+                    <li><a href="../../privacidade.html">Privacidade</a></li>
+                    <li><a href="../../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
