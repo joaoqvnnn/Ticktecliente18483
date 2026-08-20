@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html"></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="../autenticacao/login.html" class="btn-login">Login</a>
+                    <a href="../autenticacao/cadastro.html" class="btn-cadastro">Cadastrar</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../eventos.html">Eventos</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="../evento.html">Detalhes do Evento</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Pagamento Pix</span>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="pix-payment-main">
+        <div class="pix-container">
+            
+            <!-- Cabeçalho -->
+            <div class="pix-header">
+                <div class="pix-logo">
+                    <i class="fab fa-pix"></i>
+                </div>
+                <h1>Pagamento via Pix</h1>
+                <p></p>
+            </div>
+            
+            <!-- Timer -->
+            <div class="pix-timer">
+                <i class="fas fa-clock"></i>
+                <span>Expira em <strong id="pix-countdown">30:00</strong></span>
+                <div class="pix-timer-bar">
+                    <div class="pix-timer-progress"></div>
+                </div>
+            </div>
+            
+            <!-- QR Code -->
+            <div class="pix-qrcode">
+                <div class="qrcode-image">
+                    <div class="qrcode-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                        <p>QR Code</p>
+                    </div>
+                </div>
+                <p class="qrcode-caption"></p>
+            </div>
+            
+            <!-- Valor -->
+            <div class="pix-value">
+                <span>Valor a pagar</span>
+                <h2>R$</h2>
+            </div>
+            
+            <!-- Código Copia e Cola -->
+            <div class="pix-copy-section">
+                <label>Código Pix Copia e Cola</label>
+                <div class="pix-code-container">
+                    <textarea readonly></textarea>
+                    <button class="btn-copy-pix" id="btn-copy-pix">
+                        <i class="fas fa-copy"></i>
+                        <span>Copiar</span>
+                    </button>
+                </div>
+                <p class="pix-copy-success" style="display: none;">
+                    <i class="fas fa-check-circle"></i> Código copiado!
+                </p>
+            </div>
+            
+            <!-- Instruções -->
+            <div class="pix-instructions">
+                <h3>Como pagar</h3>
+                
+                <div class="pix-steps">
+                    <div class="pix-step">
+                        <div class="pix-step-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="pix-step-content">
+                            <h4>1. Abra o app do seu banco</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="pix-step">
+                        <div class="pix-step-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <div class="pix-step-content">
+                            <h4>2. Escaneie o QR Code</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="pix-step">
+                        <div class="pix-step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="pix-step-content">
+                            <h4>3. Confirme o pagamento</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="pix-step">
+                        <div class="pix-step-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="pix-step-content">
+                            <h4>4. Pronto!</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Status -->
+            <div class="pix-status">
+                <div class="status-spinner"></div>
+                <span>Aguardando confirmação do pagamento...</span>
+            </div>
+            
+            <!-- Botões -->
+            <div class="pix-actions">
+                <button class="btn-check-payment" id="btn-check-pix-payment">
+                    <i class="fas fa-sync"></i> Já fiz o pagamento
+                </button>
+                
+                <button class="btn-cancel-payment">
+                    <i class="fas fa-times"></i> Cancelar
+                </button>
+            </div>
+            
+            <!-- Ajuda -->
+            <div class="pix-help">
+                <p>Problemas com o pagamento?</p>
+                <a href="../contato.html"><i class="fas fa-headset"></i> Fale com o Suporte</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3></h3>
+                <p></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../eventos.html">Eventos</a></li>
+                    <li><a href="../categorias.html">Categorias</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../termos.html">Termos de Uso</a></li>
+                    <li><a href="../privacidade.html">Privacidade</a></li>
+                    <li><a href="../cookies.html">Cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> </li>
+                    <li><i class="fas fa-envelope"></i> </li>
+                    <li><i class="fas fa-map-marker-alt"></i> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
